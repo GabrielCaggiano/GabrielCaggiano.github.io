@@ -1,5 +1,5 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Spartan&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Spartan&display=swap');
 
 h1, h2, h3, h4, h5, h6 {
     color: #FFBA08;
@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   header h2 {
-    font-size: 2em;
+    font-size: 3em;
   }
   
   p {
@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   nav ul a {
-      color: #FFBA08;
+      color: #000000;
       padding: 0px 5px 5px 5px;
   }
   
@@ -38,9 +38,14 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   a:hover {
-    color: #A43312;
+    color: #FFBA08;
     background-color: #1E1E24;
   }
+
+ .copy a:hover {
+     color:#000000;
+     background-color:#FFBA08
+ }
   
   .home-grid{
     display: grid;
