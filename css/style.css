@@ -1,0 +1,104 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Spartan&display=swap');*/
+
+h1, h2, h3, h4, h5, h6 {
+    color: #FFBA08;
+    background-color: #1E1E24;
+    font-family: 'Permanent Marker', Tahoma, sans-serif;
+  }
+  
+  header h1 {
+    font-size: 5em;
+  }
+  
+  header h2 {
+    font-size: 2em;
+  }
+  
+  p {
+    font-family: 'Spartan', Tahoma, sans-serif;
+  }
+  
+  .main-title {
+    background-color: #1E1E24;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 3fr 2fr;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  nav ul a {
+      color: #FFBA08;
+      padding: 0px 5px 5px 5px;
+  }
+  
+  p a {
+    color: #FFBA08;
+  }
+  
+  a:hover {
+    color: #A43312;
+    background-color: #1E1E24;
+  }
+  
+  .home-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .home-headline-0 { 
+    grid-column: 1/4;
+    text-align: Left;
+    height: 75px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+  
+  .self-photo {
+      float: right;
+      box-shadow: 10px 10px 5px #FFBA08;
+  }
+  
+  nav ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 1em;
+      font-family: 'Permanent Marker', Tahoma, sans-serif;
+    }
+  
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    color: #FFBA08;
+    background-color: #1E1E24;
+    font-family: 'Permanent Marker', Tahoma, sans-serif;
+  }
+  
+  .last-modified {
+    grid-row: 2/3;
+  }
+  
+  div ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  .copy {
+    grid-row: 1/2;
+  }
+  
+  #content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  
+  strong {
+    color: #FFBA08;
+    background-color: #1E1E24;
+  }
