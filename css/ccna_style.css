@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Spartan&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+  color: #FFBA08;
+  background-color: #1E1E24;
+  font-family: 'Permanent Marker', Tahoma, sans-serif;
+}
+
+header h1 {
+  font-size: 5em;
+}
+
+header h2 {
+  font-size: 2em;
+}
+
+p {
+  font-family: 'Spartan', Tahoma, sans-serif;
+  margin-left: 20px;
+}
+
+.main-title {
+  background-color: #1E1E24;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 3fr 2fr;
+  justify-items: center;
+  align-items: center;
+}
+
+nav ul a {
+    color: #1E1E24;
+    padding: 0px 5px 5px 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    font-family: 'Permanent Marker', Tahoma, sans-serif;
+  }
+
+a:hover {
+    color: #A43312;
+    background-color: #1E1E24;
+}
+
+p a {
+  color: #FFBA08;
+}
+
+.part-heading {
+    text-align: center;
+    padding: 10px;
+}
+
+.chapter-heading {
+    padding: 10px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+  color: #FFBA08;
+  background-color: #1E1E24;
+  font-family: 'Permanent Marker', Tahoma, sans-serif;
+}
+
+.copy {
+    grid-row: 1/2;
+    text-align: center;
+  }
+
+.last-modified {
+  grid-row: 2/3;
+  text-align: center;
+}
+
+#content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+strong {
+  color: #FFBA08;
+  background-color: #1E1E24;
+}
