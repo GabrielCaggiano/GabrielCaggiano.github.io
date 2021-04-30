@@ -42,7 +42,7 @@ nav ul {
     font-family: 'Permanent Marker', Tahoma, sans-serif;
   }
 
-a:hover {
+nav ul a:hover {
     color: #FFBA08;
     background-color: #1E1E24;
 }
