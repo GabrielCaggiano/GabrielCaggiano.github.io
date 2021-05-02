@@ -37,11 +37,11 @@ a:hover {
     background-color: #1E1E24;
 }
 
-img {
+.card img {
     display: block;
     margin: 0 auto;
     width: 75%;
-    border: 2px solid #1e1e24;
+    border: 1px solid #1e1e24;
 }
 
 .main-grid {
@@ -52,6 +52,8 @@ img {
 
 p {
     padding: 10px;
+    margin: 0 auto;
+    width: 75%;
 }
 
 .card {
