@@ -74,7 +74,7 @@ p {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.white-space {
+/*.white-space {
     grid-row: 1/2;
 }
 
@@ -84,7 +84,7 @@ p {
 
 .thirds {
     grid-row: 3/4;
-}
+}*/
 
 footer {
     display: grid;
@@ -92,7 +92,8 @@ footer {
     grid-gap: 1em;
     color: #FFBA08;
     background-color: #1E1E24;
-    bottom: 0;
+    position: absolute;
+    width: 1000px;
 }
 
   footer p {
