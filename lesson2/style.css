@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Spartan&display=swap');
+
+
+#content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+    color: #FFBA08;
+    background-color: #1E1E24;
+    padding: 10px;
+    font-family: 'Permanent Marker', Tahoma, sans-serif;
+  }
+
+header h1, h2 {
+    text-align: center;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #1E1E24;
+}
+
+ul {
+    list-style: square;
+}
+
+ul a {
+    color: #1e1e24;
+}
+
+a:hover {
+    color: #FFBA08;
+    background-color: #1E1E24;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.white-space {
+    grid-row: 1/2;
+}
+
+.hicks-law {
+    grid-row: 2/3;
+}
+
+.thirds {
+    grid-row: 3/4;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    color: #FFBA08;
+    background-color: #1E1E24;
+    bottom: 0;
+}
+
+  footer p {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Permanent Marker', Tahoma, sans-serif;
+}
+
+.copy a {
+      color: #FFBA08;
+}
+
+.copy a:hover {
+    color: #1E1E24;
+    background-color: #FFBA08;
+}
