@@ -5,7 +5,13 @@
 #content {
     max-width: 1000px;
     margin: 0 auto;
+    position: relative;
+    min-height: 100vh;
   }
+
+#wrap {
+    padding-bottom: 100px;
+}
 
 h1, h2, h3, h4, h5, h6 {
     color: #FFBA08;
@@ -81,7 +87,10 @@ footer {
     color: #FFBA08;
     background-color: #1E1E24;
     position: absolute;
-    width: 1000px;
+    bottom: 0%;
+    width: 100%;
+    max-width: 1000px;
+    height: 100px;
 }
 
   footer p {
