@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
     }
   
   footer {
-    display: grid;
+    /*display: grid;*/
     grid-template-columns: 1fr;
     grid-gap: 1em;
     color: #FFBA08;
@@ -91,6 +91,7 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 0;
     width: 100%;
     max-width: 1000px;
+    height: 100px;
   }
 
   footer p {
@@ -117,6 +118,14 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 1000px;
     margin: 0 auto;
   }
+
+  #wrap {
+    padding-bottom: 100px;
+    border-radius: 25px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
   
   
   strong {
