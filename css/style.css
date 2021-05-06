@@ -61,6 +61,7 @@ h1, h2, h3, h4, h5, h6 {
       grid-row: 1/3;
       margin: 20px auto;
       display: block;
+      border: solid #1E1E24;
   }
 
   nav {
@@ -70,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   nav ul a {
-    color: #000000;
+    color: #1E1E24;
     padding: 0px 5px 5px 5px;
   }
   nav ul {
