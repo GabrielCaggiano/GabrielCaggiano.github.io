@@ -88,7 +88,7 @@ p {
 }
 
 footer {
-    display: grid;
+    /*display: grid;*/
     grid-template-columns: 1fr;
     grid-gap: 1em;
     color: #FFBA08;
