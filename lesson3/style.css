@@ -1,5 +1,12 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Spartan&display=swap');
 
+h1, h2, h3, h4, h5, h6 {
+    color: #FFBA08;
+    background-color: #1E1E24;
+    font-family: 'Permanent Marker', Tahoma, sans-serif;
+  }
 
 
 
