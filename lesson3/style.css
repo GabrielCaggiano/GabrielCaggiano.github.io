@@ -1,0 +1,25 @@
+
+
+
+
+
+header, footer {
+    background-color: #1E1E24;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+	background-color: #36454f;
+	text-align: center;
+    padding: 0 10px 0 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
