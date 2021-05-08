@@ -70,9 +70,18 @@ main h3 {
     background-color: white;
 }
 
-h3, main div p {
+main div p {
     padding: 0 40px 0 40px;
     font-family: 'Spartan', Tahoma, sans-serif;
+}
+
+main div ul {
+    list-style: decimal;
+    font-family: 'Spartan', Tahoma, sans-serif;
+}
+
+div ul li {
+    padding: 2px;
 }
 
 strong {
