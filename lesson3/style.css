@@ -6,7 +6,20 @@ h1, h2, h3, h4, h5, h6 {
     color: #FFBA08;
     background-color: #1E1E24;
     font-family: 'Permanent Marker', Tahoma, sans-serif;
-  }
+    padding: 10px;
+}
+
+#content {
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100vh;
+    font-family: 'Permanent Marker', Tahoma, sans-serif;
+}
+
+#wrap {
+    padding-bottom: 100px;
+}
 
 
 
@@ -16,20 +29,19 @@ header, footer {
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 header,
 nav,
 main,
 footer {
-	max-width: 767px;
 	margin: 0 auto;
 }
 
 nav {
-	background-color: #1e1e24;
+	background-color: #FFBA08;
 	text-align: center;
-    padding: 0 10px 0 10px;
 }
 
 nav ul {
@@ -41,9 +53,40 @@ nav ul {
 
 nav ul li a {
 	display: block;
-	color: #FFBA08;
+	color: #1E1E24;
 	text-align: center;
 	padding: 0.75rem;
 	text-decoration: none;
 	font-size: 0.95rem;
 }
+
+nav a:hover {
+    color: #FFBA08;
+    background-color: #1E1E24;
+}
+
+main h3 {
+    color: #1E1E24;
+    background-color: white;
+}
+
+h3, main div p {
+    padding: 0 40px 0 40px;
+    font-family: 'Spartan', Tahoma, sans-serif;
+}
+
+strong {
+    color: #FFBA08;
+    background-color: #1E1E24;
+  }
+
+
+footer {
+    color: #FFBA08;
+    background-color: #1E1E24;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 1024px;
+    height: 100px;
+  }
