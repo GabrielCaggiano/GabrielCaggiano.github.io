@@ -11,6 +11,14 @@ header, footer {
     justify-content: center;
 }
 
+header,
+nav,
+main,
+footer {
+	max-width: 767px;
+	margin: 0 auto;
+}
+
 nav {
 	background-color: #36454f;
 	text-align: center;
@@ -22,4 +30,13 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+}
+
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
 }
