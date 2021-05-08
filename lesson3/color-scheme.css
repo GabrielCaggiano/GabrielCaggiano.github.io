@@ -113,6 +113,36 @@ p a:hover {
     margin: 0 40px 0 40px;
 }
 
+.type-examples h1,h2,h3,h4,h5,h6,a {
+    font-family: 'Ubuntu', Tahoma, sans-serif ;
+}
+
+.type-examples p {
+    padding: 10px 40px 10px 40px;
+    margin: auto 0;
+}
+
+.type-examples p, li {
+    font-family: 'Montserrat', Tahoma, sans-serif;
+    color: #444545;
+
+}
+
+.type-examples ul {
+    list-style: square;
+}
+
+.type-examples ul li a {
+    color: #B5FFE9;
+    background-color: #444545;
+    padding: 2px;
+}
+
+.type-examples a:hover {
+    color: #D81159;
+    background-color: #AB9F9D;
+}
+
 footer {
     color: #B5FFE9;
     background-color: #444545;
