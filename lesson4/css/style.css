@@ -6,6 +6,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #444545;
     font-family: 'Ubuntu', Tahoma, sans-serif;
     padding: 10px;
+    margin: 0 auto;
 }
 
 #content {
@@ -23,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 header {
     background-color: #444545;
     display: flex;
-    /*flex-flow: column;*/
+    flex-flow: column;
     align-items: center;
     justify-content: center;
     text-align: center;
