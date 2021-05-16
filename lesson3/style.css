@@ -44,12 +44,32 @@ nav {
 	text-align: center;
 }
 
+nav button {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    /* font-family: "Raleway", Tahoma, sans-serif; */
+    margin: auto;
+    padding: 1rem;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    /* color: #EFF1ED; */
+    overflow: hidden;
+}
+
+nav ul.hide {
+    display: none;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
+
 
 nav ul li a {
 	display: block;
