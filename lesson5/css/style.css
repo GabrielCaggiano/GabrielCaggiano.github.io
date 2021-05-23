@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Spartan&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    color: #B5FFE9;
+    background-color: #444545;
+    font-family: 'Ubuntu', Tahoma, sans-serif;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#content {
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100vh;
+    font-family: 'Ubuntu', Tahoma, sans-serif
+}
+
+#wrap {
+    padding-bottom: 600px;
+}
+
+header {
+    background-color: #444545;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header,
+nav,
+main,
+footer {
+	margin: 0 auto;
+}
+
+nav {
+	background-color: #AB9F9D;
+	text-align: center;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li a {
+	display: block;
+	color: #444545;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+    color: #B5FFE9;
+    background-color: #444545;
+}
+
+.active a {
+    color:#D81159;
+    background-color: #444545;
+}
+
+
+main div p {
+    font-family: 'Spartan', Tahoma, sans-serif;
+    margin: 0;
+}
+
+main div {
+    text-align: center;
+}
+
+
+main p, div {
+    background-color: white;
+    color: #444545;
+}
+
+main p {
+    padding: 10px;
+}
+
+p a {
+    color: #B5FFE9;
+    padding: 2px;
+}
+
+p a:hover {
+    color: #D81159;
+    background-color:#AB9F9D;
+}
+
+p, li {
+    font-family: 'Montserrat', Tahoma, sans-serif;
+    color: #444545;
+}
+
+.hero {
+    list-style: none;
+    text-align: left;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.table img {
+    width: 100%;
+}
+
+th, td {
+    text-align: center;
+}
+
+.article p {
+    text-align: left;
+}
+
+.article img {
+    width: 100%;
+    float: right;
+}
+
+footer p {
+    color: #B5FFE9;
+}
+
+footer {
+    color: #88a19a;
+    background-color: #AB9F9D;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 1024px;
+    height: 600px;
+  }
+
+  footer li {
+      list-style: none;
+  }
+
+  .small-map {
+      width: 100%;
+  }
+
+  .large-map {
+      width: 0%;
+  }
