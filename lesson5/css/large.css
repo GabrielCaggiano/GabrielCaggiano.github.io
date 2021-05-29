@@ -1,5 +1,9 @@
 @media(min-width: 64em) {
 
+    #content {
+        max-width: 100%;
+    }
+
     main {
         max-width: 900px;
         background-color: white;
