@@ -1,5 +1,9 @@
 @media(min-width: 64em) {
 
+    #content {
+        max-width: 100%;
+    }
+
     main {
         max-width: 900px;
         background-color: white;
@@ -22,11 +26,16 @@
         padding: 10px 0 10px 0;
     }
 
-    .hero img {
+    .hero-img {
         grid-column: 1/3;
         grid-row: 2/3;
     }
 
+    .hero-img img {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
     .summary {
         grid-column: 1/2;
         grid-row: 2/3;
@@ -50,7 +59,7 @@
     }
 
     .large-map {
-        width: 40%;
+        width: 450px;
         float: left;
         padding: 10px;
     }

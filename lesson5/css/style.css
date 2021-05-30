@@ -21,6 +21,16 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 600px;
 }
 
+.pancakes {
+    background-color: #444545;
+    text-align: center;
+}
+
+#pancakes {
+    font-size: 3em;
+    color: #B5FFE9;
+}
+
 header {
     background-color: #444545;
     display: flex;

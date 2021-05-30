@@ -14,4 +14,9 @@
         flex: 1 1 100%;
     }
 
+    .hero-img img {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
 }

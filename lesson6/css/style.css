@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Spartan&display=swap');
+
 
 h1, h2, h3, h4, h5, h6 {
     color: #B5FFE9;
@@ -18,7 +17,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #wrap {
-    padding-bottom: 600px;
+    padding-bottom: 700px;
+}
+
+.pancakes {
+    background-color: #444545;
+    text-align: center;
+}
+
+#pancakes {
+    font-size: 3em;
+    color: #B5FFE9;
 }
 
 header {
@@ -75,7 +84,7 @@ nav a:hover {
 }
 
 .active a {
-    color:#D81159;
+    color:#B5FFE9;
     background-color: #444545;
 }
 
@@ -83,6 +92,10 @@ nav a:hover {
 main div p {
     font-family: 'Spartan', Tahoma, sans-serif;
     margin: 0;
+}
+
+main input {
+    display: none;
 }
 
 main div {
@@ -114,13 +127,14 @@ p, li {
     color: #444545;
 }
 
-.hero {
+.hero p {
     list-style: none;
     text-align: left;
 }
 
-.hero img {
-    width: 100%;
+.hero-img img {
+    max-width: 375px;
+    margin: 0 auto;
 }
 
 .table {
@@ -157,8 +171,8 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    max-width: 1024px;
-    height: 600px;
+    /*max-width: 1024px;*/
+    height: 700px;
   }
 
   footer li {
@@ -166,7 +180,7 @@ footer {
   }
 
   .small-map {
-      width: 100%;
+      width: 350px;
   }
 
   .large-map {
