@@ -15,6 +15,12 @@ main {
     margin: 0 auto;
 }
 
+.lazy-img {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
 .lazy-img img[data-src] {
     filter: blur(0.2em);
   }
