@@ -16,9 +16,8 @@ main {
 }
 
 .lazy-img {
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .lazy-img img[data-src] {
