@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <title>Lazy Loader</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="author" content="Gabriel Caggiano">
+  <meta name="description" content="Lazy Load images">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/lesson7/css/lazyload.css">
+  <script src="/lesson7/js/lazyload.js" async></script>
+</head>
+    <body>
+        <header>
+            <h1>Lazy Loader</h1>
+        </header>
+        <main class="lazy-img">
+            <picture>
+                <img src="/lesson7/images/place-holder.jpg" data-src="/lesson7/images/img01.jpg" alt="img one">
+            </picture>
+            <picture>
+                <img src="/lesson7/images/place-holder.jpg" data-src="/lesson7/images/img02.jpg" alt="img two">
+            </picture>
+            <picture>
+                <img src="/lesson7/images/place-holder.jpg" data-src="/lesson7/images/img03.jpg" alt="img three">
+            </picture>
+            <picture>
+                <img src="/lesson7/images/place-holder.jpg" data-src="/lesson7/images/img04.jpg" alt="img four">
+            </picture>
+            <picture>
+                <img src="/lesson7/images/place-holder.jpg" data-src="/lesson7/images/img05.jpg" alt="img five">
+            </picture>
+            <picture>
+                <img src="/lesson7/images/place-holder.jpg" data-src="/lesson7/images/img06.jpg" alt="img six">
+            </picture>
+        </main>
+        <footer>
+        <p class="copy">
+          &copy; <span id="copy-year"></span> | Gabriel Caggiano | Utah | <a href="https://www.byui.edu/online" target="_blank">BYUI online Learning</a>
+        </p>
+        <p class="last-modified">Last Updated: <span id="assignment-last-modified"></span></p>        
+      </footer>
+    </body>
+</html>  
