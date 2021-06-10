@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Tahoma&display=swap');
+
+table {
+    font-family: 'Ubuntu', 'Tahoma', sans-serif;
+    margin: 0 auto;
+    box-shadow: 10px 10px 15px #628ca6;
+    text-align: center;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  tbody {
+    color: black;
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid #aaa;
+    padding: 10px;
+  }
+  
+  th,
+  .nov {
+    background-color: #628ca6;
+    color: white;
+  }
+  
+  thead th,
+  tfoot td {
+    color: black;
+    background-color: #7fb9c2;
+    padding: 10px;
+  }
+  
+  thead th {
+    font-size: 1.5rem;
+  }
+  
+  tr {
+    background-color: #e7f0ed;
+  }
+  
+  tr:nth-child(odd) {
+    background: #e7ffed;
+  }
+  
+  tfoot {
+    font-size: 14px;
+  }
+
+  footer {
+      margin: 0 auto;
+      text-align: center;
+  }
