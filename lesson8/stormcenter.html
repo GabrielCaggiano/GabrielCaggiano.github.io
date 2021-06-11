@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <title>Preston 6</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="author" content="Gabriel Caggiano">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/lesson8/css/style.css">
+  <link rel="stylesheet" href="/lesson8/css/medium.css">
+  <link rel="stylesheet" href="/lesson8/css/large.css">
+  <script src="/lesson6/js/java_script.js" async></script>
+  <script src="/lesson6/js/windchill.js" async></script>
+  <script src="/lesson6/js/pancakes.js" async></script>
+  <script src="/lesson8/js/stormcenter.js" async></script>
+</head>
+    <body>
+      <div id="content">
+      <div id="wrap">
+        <div class="pancakes">
+          <span id="pancakes"></span>
+        </div>
+        <header class="weather-head">
+            <img class="logo" src="/lesson6/images/term_site_logo.png" alt="cartoon style sunset">
+            <h1>Harvest Hills Neighbors</h1>
+            <h2>Your One Stop Shop!</h2>
+        </header>
+        <nav>
+          <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="active"><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+          </ul>
+        </nav>
+        <main>
+            <h3>Storm Watchers</h3>
+            <p>If you see a crazy storm or some other extraordinary weather event, fill out the form below and let us know!</p>
+
+            <form method="GET" action="/lesson8/thanks.html">
+                <fieldset>
+                    <legend>Crazy Weather Report!</legend>
+                    <h4>Basic Information</h4>
+                    <label>Full Name*<input type="text" name="fname" required pattern="[A-z\s]{5,}" placeholder="full name required"></label>
+                    <label>Email<input type="email" name="email" placeholder="email@email.com"></label>
+                    <label>Phone*<input type="tel" name="phone" required placeholder="1-208-123-4567"></label>
+                    <label>Zip Code*<input type="number" name="zipcode" required placeholder="01234"></label>
+                    <h4>Storm Information</h4>
+                    <label>Storm Date<input type="date" name="date" placeholder="01/01/1983"></label>
+                    <label>Storm Type<input list="storms">
+                        <datalist id="storms">
+                            <option>Flash Flood</option>
+                            <option>Hail</option>
+                            <option>Hurricane</option>
+                            <option>Thunderstorm</option>
+                            <option>Tornado</option>
+                        </datalist>
+                    </label>
+                    <label class="sev">Storm Severity
+                        <input type="range" id="rating" name="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span>
+                        <datalist id="tickmarks">
+                            <option value="0">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                            <option value="5">
+                            <option value="6">
+                            <option value="7">
+                            <option value="8">
+                            <option value="9">
+                            <option value="10">
+                        </datalist>
+                    </label>
+                    <label>Storm Region
+                        <select name="region">
+                            <option disabled>Select Region</option>
+                            <option value="preston">Preston</option>
+                            <option value="soda springs">Soda Springs</option>
+                            <option value="fish haven">Fish Haven</option>
+                        </select>
+                    </label>
+                    <h4>Are you in danger?</h4>
+                    <div class="danger">
+                        <input type="radio" id="danger1" name="danger" value="yes">
+                        <label for="danger1">Yes</label>
+                    </label>
+                    </div>
+                    <div class="danger">
+                        <input type="radio" id="danger2" name="danger" value="no">
+                        <label for="danger1">No</label>
+                    </label>
+                    </div>
+                    <div class="danger">
+                        <input type="radio" id="danger3" name="danger" value="Maybe So">
+                        <label for="danger1">Maybe So</label>
+                    </label>
+                    </div>
+                    <h4>Additional Information</h4>
+                    <label><textarea id="textarea" name="addinfo"></textarea></label>
+                    <label><input type="submit" name="button" value="Submit!" onclick="myFunction()"></label>
+                </fieldset>
+            </form>
+              
+         
+        </main>
+        <footer> 
+          <h3>Contact Information</h3>
+          <img class="large-map" src="/lesson6/images/preston.png" alt="google maps view of Preston Idaho">
+          <ul>
+            <li>Phone: 1-801-798-7674</li>
+            <li>Address: 1234 Place Way</li>
+            <li>Preston, ID 83263</li>
+          </ul>
+          <a href="#"><img src="/lesson6/images/Facebook.png" alt="facebook icon"></a>
+          <a href="#"><img src="/lesson6/images/Instagram.png" alt="instagram icon"></a>
+          <a href="#"><img src="/lesson6/images/YouTube.png" alt="youtube icon"></a>
+          <img class="small-map" src="/lesson6/images/preston_small.png" alt="google maps view of Preston Idaho">
+
+          <p class="copy">
+            &copy; <span id="copy-year"></span> | Gabriel Caggiano | Utah | <a href="https://www.byui.edu/online" target="_blank">BYUI online Learning</a>
+          </p>
+          <p class="last-modified">Last Updated: <span id="assignment-last-modified"></span></p>
+          
+        </footer>
+      </div>
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+      </script>
+  
+      <script>
+  
+      WebFont.load({
+      google: {
+      families: [
+         'Ubuntu', 'Tahoma'
+         ]
+        }
+      });
+  
+      </script>
+    </body>
+</html>  

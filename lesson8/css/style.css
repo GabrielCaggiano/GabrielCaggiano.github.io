@@ -1,0 +1,197 @@
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: #B5FFE9;
+    background-color: #444545;
+    font-family: 'Ubuntu', Tahoma, sans-serif;
+    padding: 10px;
+    margin: 20px auto 0 auto;
+}
+
+#content {
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100vh;
+    font-family: 'Ubuntu', Tahoma, sans-serif
+}
+
+#wrap {
+    padding-bottom: 700px;
+}
+
+.pancakes {
+    background-color: #444545;
+    text-align: center;
+}
+
+#pancakes {
+    font-size: 3em;
+    color: #B5FFE9;
+}
+
+header {
+    background-color: #444545;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header,
+nav,
+main,
+footer {
+	margin: 0 auto;
+}
+
+nav {
+	background-color: #AB9F9D;
+	text-align: center;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li a {
+	display: block;
+	color: #444545;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+    color: #B5FFE9;
+    background-color: #444545;
+}
+
+.active a {
+    color:#B5FFE9;
+    background-color: #444545;
+}
+
+
+main div p {
+    font-family: 'Spartan', Tahoma, sans-serif;
+    margin: 0;
+}
+
+main div {
+    text-align: center;
+}
+
+
+main p, div {
+    background-color: white;
+    color: #444545;
+}
+
+main p {
+    padding: 10px;
+}
+
+p a {
+    color: #B5FFE9;
+    padding: 2px;
+}
+
+p a:hover {
+    color: #D81159;
+    background-color:#AB9F9D;
+}
+
+p, li {
+    font-family: 'Montserrat', Tahoma, sans-serif;
+    color: #444545;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 350px;
+}
+
+form fieldset {
+    background-color: #AB9F9D;
+    margin: 2rem 0;
+    border: 2px solid #444545;
+    padding: .5rem;
+    text-align: left;
+}
+
+form legend {
+    background-color: #444545;
+    color: #B5FFE9;
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+form label {
+    font-style: italic;
+    font-weight: 700;
+}
+
+form label input, select{
+    display: block;
+    border: solid 1px #444545;
+}
+
+form label input:required {
+    border-left: 6px solid #444545;
+}
+
+.sev {
+	display: flex;
+	align-items: center;
+}
+
+.danger {
+    text-align: left;
+    background-color: #AB9F9D;
+}
+
+footer p {
+    color: #B5FFE9;
+}
+
+footer {
+    color: #B5FFE9;
+    background-color: #444545;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /*max-width: 1024px;*/
+    height: 700px;
+  }
+
+ 
+
+  footer li {
+      list-style: none;
+      color: #B5FFE9;
+  }
+
+  .small-map {
+      width: 350px;
+  }
+
+  .large-map {
+      width: 0%;
+  }

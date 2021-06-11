@@ -1,0 +1,6 @@
+@media(min-width: 32.5em) {
+
+    form {
+        max-width: 725px;
+    }
+}
