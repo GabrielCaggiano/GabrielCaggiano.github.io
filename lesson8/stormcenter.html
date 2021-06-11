@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-us">
 <head>
-  <title>Preston 6</title>
+  <title>Storm Center</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <meta name="author" content="Gabriel Caggiano">
@@ -52,7 +52,7 @@
                     <label>Phone*<input type="tel" name="phone" required placeholder="1-208-123-4567"></label>
                     <label>Zip Code*<input type="number" name="zipcode" required placeholder="01234"></label>
                     <h4>Storm Information</h4>
-                    <label>Storm Date<input type="date" name="date" placeholder="01/01/1983"></label>
+                    <label>Storm Date<input type="date" name="date"></label>
                     <label>Storm Type<input list="storms">
                         <datalist id="storms">
                             <option>Flash Flood</option>
@@ -91,17 +91,14 @@
                     <div class="danger">
                         <input type="radio" id="danger1" name="danger" value="yes">
                         <label for="danger1">Yes</label>
-                    </label>
                     </div>
                     <div class="danger">
                         <input type="radio" id="danger2" name="danger" value="no">
                         <label for="danger1">No</label>
-                    </label>
                     </div>
                     <div class="danger">
                         <input type="radio" id="danger3" name="danger" value="Maybe So">
                         <label for="danger1">Maybe So</label>
-                    </label>
                     </div>
                     <h4>Additional Information</h4>
                     <label><textarea id="textarea" name="addinfo"></textarea></label>
