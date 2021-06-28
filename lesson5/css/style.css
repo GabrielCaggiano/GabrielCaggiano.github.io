@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #444545;
     font-family: 'Ubuntu', Tahoma, sans-serif;
     padding: 10px;
-    margin: 20px auto 0 auto;
+    margin: unset;
 }
 
 #content {
@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #wrap {
-    padding-bottom: 600px;
+    padding-bottom: 700px;
 }
 
 .pancakes {
@@ -133,6 +133,20 @@ p, li {
     width: 100%;
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+}
+
+.gallery picture img{
+    width: 100%;
+}
+
+picture {
+    padding: 10px;
+}
+
 .table {
     margin-left: auto;
     margin-right: auto;
@@ -162,21 +176,39 @@ footer p {
 }
 
 footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
     color: #88a19a;
     background-color: #AB9F9D;
     position: absolute;
     bottom: 0;
     width: 100%;
-    max-width: 1024px;
-    height: 600px;
+    /*max-width: 1024px;*/
+    height: 700px;
   }
 
   footer li {
       list-style: none;
   }
 
+  .social {
+      display: flex;
+      flex-direction: row;
+      background-color: #AB9F9D;
+  }
+
+  .social a {
+      padding: 10px;
+  }
+
+  .cred {
+      background-color: #AB9F9D;
+      text-align: center;
+  }
+
   .small-map {
-      width: 100%;
+      width: 350px;
   }
 
   .large-map {

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <title>Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="author" content="Gabriel Caggiano">
+  <meta name="description" content="Gallery of weather images">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/lesson5/css/style.css">
+  <link rel="stylesheet" href="/lesson5/css/medium.css">
+  <link rel="stylesheet" href="/lesson5/css/large.css">
+  <script src="/lesson5/js/java_script.js" async></script>
+  <script src="/lesson5/js/pancakes.js" async></script>
+  <script src="/lesson7/js/lazyload.js" async></script>
+</head>
+    <body>
+      <div id="content">
+      <div id="wrap">
+        <div class="pancakes">
+          <span id="pancakes"></span>
+        </div>
+        <header class="weather-head">
+            <img class="logo" src="/lesson5/images/term_site_logo.png" alt="cartoon style sunset">
+            <h1>Harvest Hills Neighbors</h1>
+            <h2>Your One Stop Shop!</h2>
+        </header>
+        <nav>
+          <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li  class="active"><a href="#">Gallery</a></li>
+          </ul>
+        </nav>
+        <main>
+                <div class="gallery">
+                    <picture>
+                        <img src="/lesson7/images/place-holder.jpg" data-src="/lesson7/images/clear.jpg" alt="clear skies">
+                        <p>Clear Skies</p>
+                    </picture>
+                    <picture>
+                        <img src="/lesson7/images/place-holder.jpg" data-src="/lesson7/images/cloudy.jpg" alt="cloudy skies">
+                        <p>Cloudy Skies</p>
+                    </picture>
+                    <picture>
+                        <img src="/lesson7/images/place-holder.jpg" data-src="/lesson7/images/hurricane.jpg" alt="hurricane view from space">
+                        <p>Hurricane</p>
+                    </picture>
+                    <picture>
+                        <img src="/lesson7/images/place-holder.jpg" data-src="/lesson7/images/ice_storm.jpg" alt="ice storm">
+                        <p>Ice Storm</p>
+                    </picture>
+                    <picture>
+                        <img src="/lesson7/images/place-holder.jpg" data-src="/lesson7/images/lightning.jpg" alt="lightning">
+                        <p>Lightning Storm</p>
+                    </picture>
+                    <picture>
+                        <img src="/lesson7/images/place-holder.jpg" data-src="/lesson7/images/rainy.jpg" alt="rainy">
+                        <p>Rainy</p>
+                    </picture>
+                    <picture>
+                        <img src="/lesson7/images/place-holder.jpg" data-src="/lesson7/images/snowy.jpg" alt="snowy">
+                        <p>Snowy</p>
+                    </picture>
+                    <picture>
+                        <img src="/lesson7/images/place-holder.jpg" data-src="/lesson7/images/windy.jpg" alt="windy">
+                        <p>Windy</p>
+                    </picture>
+                    <picture>
+                        <img src="/lesson7/images/place-holder.jpg" data-src="/lesson7/images/foggy.jpg" alt="foggy">
+                        <p>Foggy</p>
+                    </picture>
+                </div>
+        </main>
+        <footer> 
+            <h3>Contact Information</h3>
+            
+            <ul>
+              <li>Phone: 1-801-798-7674</li>
+              <li>Address: 1234 Place Way</li>
+              <li>Preston, ID 83263</li>
+            </ul>
+  
+            <div class="social">
+            <a href="#"><img src="/lesson6/images/Facebook.png" alt="facebook icon"></a>
+            <a href="#"><img src="/lesson6/images/Instagram.png" alt="instagram icon"></a>
+            <a href="#"><img src="/lesson6/images/YouTube.png" alt="youtube icon"></a>
+            </div>
+  
+            <img class="large-map" src="/lesson6/images/preston.png" alt="google maps view of Preston Idaho">
+            <img class="small-map" src="/lesson6/images/preston_small.png" alt="google maps view of Preston Idaho">
+            
+  
+            <div class="cred">
+            <p class="copy">
+              &copy; <span id="copy-year"></span> | Gabriel Caggiano | Utah | <a href="https://www.byui.edu/online" target="_blank">BYUI online Learning</a>
+            </p>
+            <p class="last-modified">Last Updated: <span id="assignment-last-modified"></span></p>
+            </div>
+            
+          </footer>
+        </div>
+        </div>
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+        </script>
+    
+        <script>
+    
+        WebFont.load({
+        google: {
+        families: [
+           'Ubuntu', 'Tahoma'
+           ]
+          }
+        });
+    
+        </script>
+      </body>
+  </html>  
