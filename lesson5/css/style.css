@@ -172,6 +172,10 @@ th, td {
 }
 
 footer p {
+    color: #444545;
+}
+
+footer span {
     color: #B5FFE9;
 }
 
