@@ -2,7 +2,7 @@
 
 const chill = document.getElementById('wind-chill');
 const speed = document.getElementById('speed');
-const temp  = document.getElementById('temp');
+const temp  = document.getElementById('current-temp');
 
 const t = parseFloat(temp.value);
 const s = parseFloat(speed.value);
