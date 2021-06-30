@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #wrap {
-    padding-bottom: 700px;
+    padding-bottom: 100px;
 }
 
 .pancakes {
@@ -187,6 +187,21 @@ footer p {
     color: #B5FFE9;
 }
 
+.contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: #AB9F9D;
+    margin: 0 auto 10px auto;
+    width: 90%;
+}
+
+.contact p {
+    background-color: #AB9F9D;
+}
+
 footer {
     display: grid;
     grid-template-columns: 1fr;
@@ -197,7 +212,7 @@ footer {
     bottom: 0;
     width: 100%;
     /*max-width: 1024px;*/
-    height: 700px;
+    /*height: 700px;*/
   }
 
   footer li {
