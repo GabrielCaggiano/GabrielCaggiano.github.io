@@ -133,6 +133,10 @@ p, li {
     width: 100%;
 }
 
+.forecast {
+    display: none;
+}
+
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -214,3 +218,95 @@ footer {
   .large-map {
       width: 0%;
   }
+
+
+  /*-------------------Storm Center-------------------*/
+
+  form {
+    margin: 0 auto;
+    max-width: 350px;
+}
+
+form fieldset {
+    background-color: #AB9F9D;
+    margin: 2rem 0;
+    border: 2px solid #444545;
+    padding: .5rem;
+    text-align: left;
+}
+
+form legend {
+    background-color: #444545;
+    color: #B5FFE9;
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+form label {
+    font-style: italic;
+    font-weight: 700;
+}
+
+form label input, select{
+    display: block;
+    border: solid 1px #444545;
+}
+
+form label input:required {
+    border-left: 6px solid #444545;
+}
+
+.sev {
+	display: flex;
+	align-items: center;
+}
+
+.danger {
+    text-align: left;
+    background-color: #AB9F9D;
+}
+
+/*-------------------Home Page-------------------*/
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    grid-gap: 1em;
+    grid-gap: 1em;
+    margin: 10px 0 10px 0;
+}
+
+.cards h4 {
+    height: 60px;
+}
+
+.cards p {
+    font-size: 1.2em;
+    background-color: #AB9F9D;
+}
+
+.cards section {
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: #AB9F9D;
+    margin: 0 auto;
+    width: 335px;
+}
+
+.cards img {
+    max-width: 320px;
+    border-radius: 5px;
+}
+
+.card_0 {
+    order: 2;
+}
+
+.card_2 {
+    order: 3;
+}
+
+.card_6 {
+    order: 1;
+}
