@@ -188,9 +188,6 @@ footer p {
 }
 
 .contact {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
     border-radius: 5px;
     border: 2px solid black;
     background-color: #AB9F9D;
@@ -202,27 +199,25 @@ footer p {
     background-color: #AB9F9D;
 }
 
+.contact li {
+    list-style: none;
+}
+
 footer {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    color: #88a19a;
-    background-color: #AB9F9D;
+    background-color: #444544;
     position: absolute;
     bottom: 0;
     width: 100%;
-    /*max-width: 1024px;*/
-    /*height: 700px;*/
   }
 
-  footer li {
-      list-style: none;
-  }
+footer p {
+    text-align: center;
+    color:#B5FFE9;
+}
 
   .social {
-      display: flex;
-      flex-direction: row;
       background-color: #AB9F9D;
+      margin: 0 auto;
   }
 
   .social a {
@@ -235,7 +230,8 @@ footer {
   }
 
   .small-map {
-      width: 350px;
+      width: 335px;
+      margin: 0 auto;
   }
 
   .large-map {
