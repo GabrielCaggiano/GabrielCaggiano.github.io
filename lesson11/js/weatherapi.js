@@ -2,7 +2,7 @@ const weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&u
 
 const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=961eddd3f168fd57de8e0076dcb9fdd8";
 
-fetch(weatherURL)
+fetch(weatherURL) 
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
