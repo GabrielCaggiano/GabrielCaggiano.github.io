@@ -215,24 +215,24 @@ footer p {
     color:#B5FFE9;
 }
 
-  .social {
+.social {
       background-color: #AB9F9D;
       margin: 0 auto;
-  }
+}
 
-  .social a {
+.social a {
       padding: 10px;
-  }
+}
 
-  .cred {
+.cred {
       background-color: #AB9F9D;
       text-align: center;
-  }
+}
 
-  .small-map {
+.small-map {
       width: 335px;
       margin: 0 auto;
-  }
+}
 
   .large-map {
       width: 0%;
