@@ -230,7 +230,7 @@ footer p {
 }
 
 .small-map {
-      width: 335px;
+      width: 90%;
       margin: 0 auto;
 }
 
@@ -310,7 +310,6 @@ form label input:required {
     border: 2px solid black;
     background-color: #AB9F9D;
     margin: 0 auto;
-    width: 335px;
 }
 
 .cards img {
