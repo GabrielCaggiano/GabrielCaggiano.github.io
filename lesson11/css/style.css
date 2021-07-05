@@ -142,13 +142,14 @@ p, li {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1em;
+    margin: 0 auto;
 }
 
-.gallery picture img{
+.gallery figure img{
     width: 100%;
 }
 
-picture {
+figure {
     padding: 10px;
 }
 
