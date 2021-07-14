@@ -19,6 +19,7 @@ fetch(requestURL)
         let founder = document.createElement('p');
         let hq = document.createElement('p');
         let image = document.createElement('img');
+        let url = document.createElement('p');
 
         card.className = "card_" + n;
         name.textContent = cards[n].name;
