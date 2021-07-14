@@ -36,7 +36,7 @@
         grid-row: 2/3;
         background-color: rgba(171, 159, 157, 0.8);
         margin: 20px;
-        height: 250px;
+        height: 150px;
         width: 250px;
     }
 
@@ -46,7 +46,7 @@
         grid-gap: 1em;
     }
 
-    picture img:hover {
+    .gallery figure img:hover {
         box-shadow: 0 0 20px #444545;
     }
 

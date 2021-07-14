@@ -32,11 +32,11 @@ else {
 }
 
 
-document.getElementById("assignment-last-modified").innerHTML = document.lastModified;
-document.getElementById("copy-year").innerHTML = new Date().getFullYear();
+//document.getElementById("assignment-last-modified").innerHTML = document.lastModified;
+//document.getElementById("copy-year").innerHTML = new Date().getFullYear();
 
-function toggleMenu() {
+//function toggleMenu() { 
     
-    document.getElementById("primaryNav").classList.toggle("hide");
-   }
+  //  document.getElementById("primaryNav").classList.toggle("hide");
+   //}
 
