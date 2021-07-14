@@ -8,9 +8,9 @@ fetch(requestURL)
     console.table(jsonObject);  // temporary checking for valid response and data parsing
 
     const cards = jsonObject['cards'];
-    for (let i = 0; i <= 2; i++ ) {
+    for (let i = 0; i < cards.length; i++ ) {
 
-        let n = Math.floor((Math.random() * 7) + 1);
+        if (i == 0 || i == 1 || i == 2){
 
         let card = document.createElement('section');
         let name = document.createElement('h3');
@@ -19,17 +19,18 @@ fetch(requestURL)
         let founder = document.createElement('p');
         let hq = document.createElement('p');
         let image = document.createElement('img');
-        let url = document.createElement('p');
+        let url = document.createElement('a');
 
-        card.className = "card_" + n;
-        name.textContent = cards[n].name;
-        motto.textContent = cards[n].motto;
-        founded.textContent = "Founded in: " + cards[n].yearFounded;
-        founder.textContent = "Population: " + cards[n].founder;
-        hq.textContent = "Annual Rain Fall: " + cards[n].headquarters;
-        url.textContent = "Website: " + cards[n].website;
-        image.setAttribute('src', "/lesson9/images/" + cards[n].photo);
-        image.setAttribute('alt', "photo of " + cards[n].name);
+        card.className = "card";
+        name.textContent = cards[i].name;
+        motto.textContent = cards[i].motto;
+        founded.textContent = "Founded in: " + cards[i].yearFounded;
+        founder.textContent = "Founder: " + cards[i].founder;
+        hq.textContent = "Headquarters: " + cards[i].headquarters;
+        url.textContent = cards[i].website;
+        url.setAttribute('href', cards[i].website);
+        image.setAttribute('src', "/lesson9/images/" + cards[i].photo);
+        image.setAttribute('alt', "photo of " + cards[i].name);
 
         card.appendChild(name);
         card.appendChild(motto);
@@ -39,9 +40,7 @@ fetch(requestURL)
         card.appendChild(url);
 
         document.querySelector('div.cards').appendChild(card);
-
-      
-
+        }
     }
     
   });
