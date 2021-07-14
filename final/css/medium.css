@@ -1,0 +1,8 @@
+@media(min-width: 32.5em) {
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+    }
+
+}

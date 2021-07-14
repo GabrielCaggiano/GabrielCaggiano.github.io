@@ -1,0 +1,69 @@
+{
+    "businesses": [
+        {
+            "name": "Smith's",
+            "photo": "",
+            "motto": "Feed The Human Spirit",
+            "yearFounded": "1911",
+            "founder": "Lorenzo Smith",
+            "headquarters": "Salt Lake City, Utah",
+            "website": "https://www.smithsfoodanddrug.com/"
+        },
+        {
+            "name": "Taco Bell",
+            "photo": "",
+            "motto": "Live Mas",
+            "yearFounded": "1962",
+            "founder": "Glen Bell",
+            "headquarters": "Irvine, California",
+            "website": "https://www.tacobell.com/"
+        },
+        {
+            "name": "Fat Cats",
+            "photo": "",
+            "motto": "All Out Fun",
+            "yearFounded": "1999",
+            "founder": "Dave Rutter & Sean Collins",
+            "headquarters": "Lehi, UT",
+            "website": "https://www.fatcatsfun.com/SaratogaSprings"
+        },
+        {
+            "name": "Costco",
+            "photo": "",
+            "motto": "Do The Right Thing",
+            "yearFounded": "1976",
+            "founder": "James Senegal & Jeffrey Brotman",
+            "headquarters": "Issaquah, Washington",
+            "website": "ttps://www.costco.com/h"
+        },
+        {
+            "name": "Walmart",
+            "photo": "",
+            "motto": "Save Money. Live Better",
+            "yearFounded": "19626",
+            "founder": "Sam Walton",
+            "headquarters": "Bentonville, Arkansas",
+            "website": "http://walmart.com/"
+        },
+        {
+            "name": "Maurices",
+            "photo": "",
+            "motto": "First with more of everything new in fashion",
+            "yearFounded": "1931",
+            "founder": "E. Maurice Labovitz",
+            "headquarters": "Duluth, Minnesota",
+            "website": "http://www.maurices.com/"
+        },
+        {
+            "name": "Tractor Supply Company",
+            "photo": "",
+            "motto": "The Stuff You Need Out Here",
+            "yearFounded": "1938",
+            "founder": "Lorenzo Smith",
+            "headquarters": "Brentwood, Tennessee",
+            "website": "http://tractorsupply.com/"
+        }
+    ]
+
+    
+}
