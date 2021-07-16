@@ -5,4 +5,8 @@
         justify-content: center;
     }
 
+    .forecast {
+        display: block;
+    }
+
 }
