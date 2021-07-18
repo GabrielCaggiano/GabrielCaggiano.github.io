@@ -24,5 +24,32 @@ fetch(weatherURL)
             document.getElementById("forecastTemp" + i).innerHTML=Math.round(jsObject.daily[i].temp.day);
     }
 
+    let alert_msg = document.createElement('section');
+    let alert_close = document.createElement('span');
+
+    alert_msg.className = "alert-msg";
+    alert_close.className = "alert-close";
+
+    if (jsObject.hasOwnProperty('alerts')) {
+
+      alert_msg.textContent = "Look out!: " + jsObject.alerts.event;
+      alert_close.textContent = "close";
+      alert_close.setAttribute('onClick', "this.parentElement.style.display='none';");
+
+      alert_msg.appendChild(alert_close);
+      document.querySelector('div.alert').appendChild(alert_msg);
+
+    }
+     else {
+
+      alert_msg.textContent = "No worries mate, no alerts found!";
+      alert_close.textContent = "close";
+      alert_close.setAttribute('onClick', "this.parentElement.style.display='none';");
+
+      alert_msg.appendChild(alert_close);
+      document.querySelector('div.alert').appendChild(alert_msg);
+      
+     }
+
     
 });

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <title>Saratoga Springs Chamber of Commerce</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="author" content="Gabriel Caggiano">
+  <meta name="description" content="Final Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/final/images/favicon.ico">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/final/css/style.css">
+  <link rel="stylesheet" href="/final/css/medium.css">
+  <link rel="stylesheet" href="/final/css/large.css">
+  <script src="/final/js/js.js" async></script>
+  <script src="/final/js/weather.js" async></script>
+</head>
+    <body>
+      <div class="alert" id="alert">
+      </div>
+        <header>
+            <h1>Saratoga Springs Chamber of Commerce</h1>
+        </header>
+        <nav>
+            <ul class="navigation">
+              <li class="menu"><a href="#" onclick="toggleMenu()">&#9776;</a></li>
+              <li class="active"><a href="/final/index.html">Home</a></li>
+              <li><a href="/final/city.html">Saratoga Springs</a></li>
+              <li><a href="/final/join.html">Join Us!</a></li>
+              <li><a href="/final/directory.html">Directory</a></li>
+              <li><a href="/final/contact.html">Contact us!</a></li>
+            </ul>
+          </nav>
+          <main>
+            <div class="hero">
+                <h2>Home</h2>
+              <img class="hero-img" src="/lesson9/images/hero.jpg" alt="neighborhood aerial photo">
+              <div class="weather-div">
+                <p class="weather">
+                  <strong>Current Weather</strong><br>
+                  Temp:<span id="current-temp"></span>°F<br>
+                  Description:<span id="description"></span><br>
+                  Humidity: <span id="humidity"></span>%<br>
+                </p>
+              </div>
+            </div>
+            <div class="forecast">
+              <h2>Three Day Forecast</h2>
+            <table class="table">
+            <tbody>
+              <tr>
+                <th><span id="day1"></span></th>
+                <th><span id="day2"></span></th>
+                <th><span id="day3"></span></th>
+              </tr>
+              <tr>
+                  <td><span id="forecastTemp1"></span>°F</td>
+                  <td><span id="forecastTemp2"></span>°F</td>
+                  <td><span id="forecastTemp3"></span>°F</td>
+              </tr>
+            </tbody>  
+            </table>
+            </div>
+
+
+
+            
+            <div class="contact">
+                <h2>Contact Us!</h2>
+                <p>Phone: 1-801-798-7674</p>
+                <p>Address: 1234 Place Way</p>
+                <p>Preston, ID 83263</p>
+                <div class="social">
+                    <a href="#"><img src="/lesson6/images/Facebook.png" alt="facebook icon"></a>
+                    <a href="#"><img src="/lesson6/images/Instagram.png" alt="instagram icon"></a>
+                    <a href="#"><img src="/lesson6/images/YouTube.png" alt="youtube icon"></a>
+                </div>
+                <div class="map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48636.04503880268!2d-111.92663854539795!3d40.370004955479786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d7ec978bb7a97%3A0xc5493ac704ae8275!2sSaratoga%20Springs%2C%20UT!5e0!3m2!1sen!2sus!4v1626408934520!5m2!1sen!2sus" width="335" height="335" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            
+        </main>
+        <footer>
+        <p class="copy">
+          &copy; <span id="copy-year"></span> | Gabriel Caggiano | Utah | <a href="https://www.byui.edu/online" target="_blank">byui online learning</a>
+        </p>
+        <p class="last-modified">Last Updated: <span id="assignment-last-modified"></span></p>        
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+      </script>
+      <script>
+
+    WebFont.load({
+    google: {
+    families: [
+       'Encode Sans SC', 'Ubuntu Condensed'
+       ]
+      }
+    });
+
+    </script>
+    </body>
+</html>  

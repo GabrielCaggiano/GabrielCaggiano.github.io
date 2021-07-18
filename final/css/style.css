@@ -81,9 +81,13 @@ nav a:hover {
 }
 
 .active a {
-    color:#46237A;
-    background-color: #3DDC97;
+    color:#FCFCFC;
+    background-color: #46237A;
     font-weight: bold;
+}
+
+.active a:hover {
+    color: #FF101F;
 }
 
 .hero h3 {
@@ -121,9 +125,28 @@ main h2 {
     margin: unset;
 }
 
-/*.forecast {
-    display: none;
-}*/
+.alert {
+    font-family: 'Encode Sans SC';
+}
+
+.alert-msg {
+    padding: 20px;
+    background-color: #FF101F;
+    color: #FCFCFC;
+}
+
+.alert-close {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-alert:hover {
+    color: black;
+}
 
 .table {
     margin-left: auto;
@@ -177,11 +200,18 @@ main h2 {
 }
 
 .join button {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #46237A;
     background-color: #3DDC97;
-    width: 90px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px #999;
+    width: 75px;
     margin: 0 auto;
-    border: 2px solid #46237A;
-    border-radius: 4px;
 }
 
 .join button a {
@@ -193,7 +223,17 @@ main h2 {
     color: #FCFCFC;
 }
 
-.join p{
+.join button:hover {
+    background-color: #30ac76
+}
+
+.join button:active {
+    background-color: #30ac76;
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+  }
+
+main p{
     width: 335px;
     margin: 10px auto;
     padding: 10px;
@@ -203,13 +243,6 @@ main h2 {
     text-decoration: underline #FF101F;
 }
 
-
-
-
-
-
-
-
 .contact {
     text-align: center;
 }
@@ -217,6 +250,7 @@ main h2 {
 .contact p{
     width: 335px;
     margin: 10px auto;
+    padding: unset;
 }
 
 .contact li {
@@ -250,5 +284,4 @@ footer a {
 
 footer a:hover {
     color: #FF101F;
-    background-color: #3DDC97;
 }

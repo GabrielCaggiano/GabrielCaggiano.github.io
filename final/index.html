@@ -17,6 +17,8 @@
   <script src="/final/js/weather.js" async></script>
 </head>
     <body>
+      <div class="alert" id="alert">
+      </div>
         <header>
             <h1>Saratoga Springs Chamber of Commerce</h1>
         </header>
@@ -34,12 +36,14 @@
             <div class="hero">
                 <h2>Home</h2>
               <img class="hero-img" src="/lesson9/images/hero.jpg" alt="neighborhood aerial photo">
-              <p class="weather">
-                <strong>Current Weather</strong><br>
-                Temp:<span id="current-temp"></span>°F<br>
-                Description:<span id="description"></span><br>
-                Humidity: <span id="humidity"></span>%<br>
-              </p>
+              <div class="weather-div">
+                <p class="weather">
+                  <strong>Current Weather</strong><br>
+                  Temp:<span id="current-temp"></span>°F<br>
+                  Description:<span id="description"></span><br>
+                  Humidity: <span id="humidity"></span>%<br>
+                </p>
+              </div>
             </div>
             <div class="forecast">
               <h2>Three Day Forecast</h2>
@@ -66,18 +70,22 @@
                 <p>
                   Become a member of our amazing organizations and see your business grow like never before!  Not a business owner?  Not to worry, you can sign up as a consumer and enjoy the benefits and discounts that come with being a member of the chamber. <strong>Don't delay, sign up today!</strong>
                 </p>
-                <button><a href="/final/join.html">Join Now!</a></button>
+                <button onclick="joinUs()">Join Us!</button>
             </div>
             <div class="purpose">
                 <h2>Our Purpose</h2>
                 <p>
-
+                  We are a group dedicated to bringing the best attractions to Saratoga Springs.  We aim to build up businesses by having integrity in our dealings and lending a helping hand.  Through these values we will build up the city of Saratoga Springs, and bring prosperity to the region.  As a buiness owner you will be wlecomed into a family of businesses all dedicated to helping each other.  As a consumer, you will have confidence that your local busniesses are honest and fair, and will be the first to hear about many special offers or discounts.  
                 </p>
             </div>
             <div class="events">
                 <h2>Events</h2>
                 <ul>
-
+                  <li>Aug 9 - Celebrate the Mayor's 90th Birthday!</li>
+                  <li>Aug 24 - How can BigData work for you?</li>
+                  <li> Sep 11 - Remembering the heroes of 9/11</li>
+                  <li>Oct 31 - Halloween Business Bash!</li>
+                  <li> Nov 26 - Thanks for giving your all!</li>
                 </ul>
             </div>
             <div class="contact">
