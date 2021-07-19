@@ -5,8 +5,29 @@
         justify-content: center;
     }
 
+    .navigation li:first-child {
+        display: none;
+    }
+    
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+    nav ul li a {
+        text-align: center;
+    }
+
+
     .forecast {
         display: block;
     }
+    
+    header h1 {
+        width: 100%;
+    }
 
+    .events ul li {
+        text-align: center;
+        list-style: none;
+    }
 }

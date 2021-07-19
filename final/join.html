@@ -24,9 +24,9 @@
         <nav>
             <ul class="navigation">
               <li class="menu"><a href="#" onclick="toggleMenu()">&#9776;</a></li>
-              <li class="active"><a href="/final/index.html">Home</a></li>
+              <li><a href="/final/index.html">Home</a></li>
               <li><a href="/final/city.html">Saratoga Springs</a></li>
-              <li><a href="/final/join.html">Join Us!</a></li>
+              <li class="active"><a href="/final/join.html">Join Us!</a></li>
               <li><a href="/final/directory.html">Directory</a></li>
               <li><a href="/final/contact.html">Contact us!</a></li>
             </ul>
@@ -60,6 +60,100 @@
               </tr>
             </tbody>  
             </table>
+            </div>
+
+            <div class="join-form">
+              <form method="GET" action="thanks.html">
+                <fieldset>
+                    <legend>Join Us!</legend>
+                    <h4>Basic Information</h4>
+                    <label>First Name*<input type="text" name="fname" required pattern="[A-z\s]{5,}" placeholder="First name required"></label>
+                    <label>Last Name*<input type="text" name="lname" required pattern="[A-z\s]{5,}" placeholder="Last name required"></label>
+                    <label>Title<input type="text" name="title" pattern="[A-z\s]{5,}" placeholder="Super Awesome Person"></label>
+                    <label>Email<input type="email" name="email" required placeholder="email@email.com"></label>
+                    <label>Phone*<input type="tel" name="phone" placeholder="1-800-YOU-ROCK"></label>
+                    
+                    <h4>Business Information</h4>
+                    <label>Business Name*<input type="text" name="bname" required placeholder="Your awesome business"></label>
+                    <label>Business Adress<input type="text" name="baddress" placeholder="123 Making Money Lane"></label>
+                    <label>City<input type="text" name="city" placeholder="Eureka"></label>
+                    <label>State <br>
+                      <select id="bstate" name="bstate" >
+                        <option value="AL">AL</option>
+                        <option value="AK">AK</option>
+                        <option value="AR">AR</option>	
+                        <option value="AZ">AZ</option>
+                        <option value="CA">CA</option>
+                        <option value="CO">CO</option>
+                        <option value="CT">CT</option>
+                        <option value="DC">DC</option>
+                        <option value="DE">DE</option>
+                        <option value="FL">FL</option>
+                        <option value="GA">GA</option>
+                        <option value="HI">HI</option>
+                        <option value="IA">IA</option>	
+                        <option value="ID">ID</option>
+                        <option value="IL">IL</option>
+                        <option value="IN">IN</option>
+                        <option value="KS">KS</option>
+                        <option value="KY">KY</option>
+                        <option value="LA">LA</option>
+                        <option value="MA">MA</option>
+                        <option value="MD">MD</option>
+                        <option value="ME">ME</option>
+                        <option value="MI">MI</option>
+                        <option value="MN">MN</option>
+                        <option value="MO">MO</option>	
+                        <option value="MS">MS</option>
+                        <option value="MT">MT</option>
+                        <option value="NC">NC</option>	
+                        <option value="NE">NE</option>
+                        <option value="NH">NH</option>
+                        <option value="NJ">NJ</option>
+                        <option value="NM">NM</option>			
+                        <option value="NV">NV</option>
+                        <option value="NY">NY</option>
+                        <option value="ND">ND</option>
+                        <option value="OH">OH</option>
+                        <option value="OK">OK</option>
+                        <option value="OR">OR</option>
+                        <option value="PA">PA</option>
+                        <option value="RI">RI</option>
+                        <option value="SC">SC</option>
+                        <option value="SD">SD</option>
+                        <option value="TN">TN</option>
+                        <option value="TX">TX</option>
+                        <option value="UT" selected="">UT</option>
+                        <option value="VT">VT</option>
+                        <option value="VA">VA</option>
+                        <option value="WA">WA</option>
+                        <option value="WI">WI</option>	
+                        <option value="WV">WV</option>
+                        <option value="WY">WY</option>
+                      </select>
+                    </label>
+                    
+                    <label>Zip Code*<input type="number" name="zipcode" required placeholder="01234"></label>
+                    <label>Website<input type="text" name="website" placeholder="mybusiness.com"></label>
+                    <h4>Membership level (annual fee)</h4>
+                    <div class="membership">
+                        <input type="radio" id="member1" name="member" value="Non-profit ($100)">
+                        <label for="member1">Non-profit ($100)</label>
+                    </div>
+                    <div class="membership">
+                        <input type="radio" id="member2" name="member" value="Bronze ($200)">
+                        <label for="member1">Bronze ($200)</label>
+                    </div>
+                    <div class="membership">
+                        <input type="radio" id="member3" name="member" value="Silver ($400)">
+                        <label for="member1">Silver ($400)</label>
+                    </div>
+                    <div class="gold">
+                      <input type="radio" id="member4" name="member" value="Gold ($1,000)">
+                      <label for="member1">Gold ($1,000)</label>
+                  </div>
+                  <label><input type="submit" name="button" value="Submit!" onclick="myFunction()"></label>
+            </form>
             </div>
 
 

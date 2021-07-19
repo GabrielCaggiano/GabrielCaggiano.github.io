@@ -87,11 +87,19 @@ nav a:hover {
 }
 
 .active a:hover {
-    color: #FF101F;
+    color: #3DDC97;
 }
 
 .hero h3 {
     margin-top: 20px;
+}
+
+.hero a {
+    color:#FCFCFC;
+}
+
+.hero a:hover {
+    color:#3ddc97;
 }
 
 .hero img {
@@ -243,6 +251,11 @@ main p{
     text-decoration: underline #FF101F;
 }
 
+.events ul {
+    margin: 0 auto;
+
+}
+
 .contact {
     text-align: center;
 }
@@ -284,4 +297,60 @@ footer a {
 
 footer a:hover {
     color: #FF101F;
+}
+
+/*------Join------*/
+
+form {
+    margin: 0 auto;
+    max-width: 350px;
+}
+
+form h4 {
+    color: #FCFCFC;
+    background-color: #46237A;
+}
+
+form fieldset {
+    background-color: #FCFCFC;
+    margin: 2rem 0;
+    border: 2px solid #444545;
+    padding: .5rem;
+    text-align: left;
+}
+
+form legend {
+    background-color: #46237A;
+    color: #FCFCFC;
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+form label {
+    font-style: italic;
+    font-weight: 700;
+}
+
+form label input, select{
+    display: block;
+    border: solid 1px #46237A;
+}
+
+form label input:required {
+    border-left: 6px solid #3DDC97;
+}
+
+.sev {
+	display: flex;
+	align-items: center;
+}
+
+.membership {
+    text-align: left;
+}
+
+.gold {
+    color: #3DDC97;
+    background-color: #46237A;
+    padding: 2px;
 }
