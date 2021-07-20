@@ -11,7 +11,7 @@
         },
         {
             "name": "Taco Bell",
-            "photo": "",
+            "photo": "tacobell.png",
             "motto": "Live Mas",
             "yearFounded": "1962",
             "founder": "Glen Bell",
@@ -20,7 +20,7 @@
         },
         {
             "name": "Fat Cats",
-            "photo": "",
+            "photo": "fatcats.png",
             "motto": "All Out Fun",
             "yearFounded": "1999",
             "founder": "Dave Rutter & Sean Collins",
@@ -29,7 +29,7 @@
         },
         {
             "name": "Costco",
-            "photo": "",
+            "photo": "costco.png",
             "motto": "Do The Right Thing",
             "yearFounded": "1976",
             "founder": "James Senegal & Jeffrey Brotman",
@@ -38,7 +38,7 @@
         },
         {
             "name": "Walmart",
-            "photo": "",
+            "photo": "walmart.png",
             "motto": "Save Money. Live Better",
             "yearFounded": "19626",
             "founder": "Sam Walton",
@@ -47,7 +47,7 @@
         },
         {
             "name": "Maurices",
-            "photo": "",
+            "photo": "maurices.png",
             "motto": "First with more of everything new in fashion",
             "yearFounded": "1931",
             "founder": "E. Maurice Labovitz",
@@ -56,7 +56,7 @@
         },
         {
             "name": "Tractor Supply Company",
-            "photo": "",
+            "photo": "tractorsupply",
             "motto": "The Stuff You Need Out Here",
             "yearFounded": "1938",
             "founder": "Lorenzo Smith",
