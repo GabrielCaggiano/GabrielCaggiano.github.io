@@ -24,11 +24,11 @@
         <nav>
             <ul class="navigation">
               <li class="menu"><a href="#" onclick="toggleMenu()">&#9776;</a></li>
-              <li class="active"><a href="/final/index.html">Home</a></li>
+              <li><a href="/final/index.html">Home</a></li>
               <li><a href="/final/city.html">Saratoga Springs</a></li>
               <li><a href="/final/join.html">Join Us!</a></li>
               <li><a href="/final/directory.html">Directory</a></li>
-              <li><a href="/final/contact.html">Contact us!</a></li>
+              <li class="active"><a href="/final/contact.html">Contact us!</a></li>
             </ul>
           </nav>
           <main>
@@ -61,12 +61,23 @@
             </tbody>  
             </table>
             </div>
-
-
-
-            
-            <div class="contact">
-                <h2>Contact Us!</h2>
+            <div class="contact-page">
+                <h2>Who are we?</h2>
+                <div class="board">
+                  <ul>
+                    <li class="centered"><strong>Board of Directors</strong><br></li>
+                    <li><strong>Dwight K. Schrute</strong><br>
+                    <li>Assistant to the Regional Manager | Dunder Mifflin<br></li>
+                    <li><strong>Jack Sparrow</strong><br>
+                    <li>Captain of Acquisitions | The Black Pearl Co. <br></li>
+                    <li><strong>John Wick</strong><br>
+                    <li>Problem Solver Extraordinaire | Baba Yega Inc. <br></li>
+                    <li><strong>Thanos</strong><br>
+                    <li>Talent Acquisition | Infinity Stone Works</p></li>
+                  </ul>
+                </div>
+                <div class="contact-info">
+                  <h2>Where are we?</h2>
                 <p>Phone: 1-801-798-7674</p>
                 <p>Address: 1234 Place Way</p>
                 <p>Preston, ID 83263</p>
@@ -78,7 +89,24 @@
                 <div class="map">
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48636.04503880268!2d-111.92663854539795!3d40.370004955479786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d7ec978bb7a97%3A0xc5493ac704ae8275!2sSaratoga%20Springs%2C%20UT!5e0!3m2!1sen!2sus!4v1626408934520!5m2!1sen!2sus" width="335" height="335" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
+                </div>
             </div>
+            <div class="contact-form">
+              <form method="GET" action="thanks.html">
+                <fieldset>
+                  <legend>Contact Us!</legend>
+                  <h4>Basic Information</h4>
+                  <label>Name*<input type="text" name="fname" required pattern="[A-z\s]{5,}" placeholder="First name required"></label>
+                  <label>Email*<input type="email" name="email" required placeholder="email@email.com"></label>
+                  <label>Phone<input type="tel" name="phone" placeholder="1-800-YOU-ROCK"></label>
+                  <h4>Comments</h4>
+                  <label><textarea id="textarea" name="comment"></textarea></label>
+                  <label><input type="submit" name="button" value="Submit!"></label>
+                </fieldset>
+              </form>
+            </div>
+            
+              
             
         </main>
         <footer>

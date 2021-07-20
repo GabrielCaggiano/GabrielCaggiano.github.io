@@ -2,8 +2,8 @@
     "cards": [
         {
             "name": "Smith's",
-            "photo": "",
-            "motto": "Feed The Human Spirit",
+            "photo": "smiths.png",
+            "motto": "Fresh For Everyone",
             "yearFounded": "1911",
             "founder": "Lorenzo Smith",
             "headquarters": "Salt Lake City, Utah",
