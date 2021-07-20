@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="/final/css/large.css">
   <script src="/final/js/js.js" async></script>
   <script src="/final/js/weather.js" async></script>
-  <script src="/final/js/dir.js" async></script>
 </head>
     <body>
       <div class="alert" id="alert">
@@ -28,45 +27,23 @@
               <li><a href="/final/index.html">Home</a></li>
               <li><a href="/final/city.html">Saratoga Springs</a></li>
               <li><a href="/final/join.html">Join Us!</a></li>
-              <li class="active"><a href="/final/directory.html">Directory</a></li>
+              <li><a href="/final/directory.html">Directory</a></li>
               <li><a href="/final/contact.html">Contact us!</a></li>
             </ul>
           </nav>
           <main>
             <div class="hero">
-                <h2>Home</h2>
-              <img class="hero-img" src="/lesson9/images/hero.jpg" alt="neighborhood aerial photo">
-              <div class="weather-div">
-                <p class="weather">
-                  <strong>Current Weather</strong><br>
-                  Temp:<span id="current-temp"></span>°F<br>
-                  Description:<span id="description"></span><br>
-                  Humidity: <span id="humidity"></span>%<br>
-                </p>
-              </div>
+              <img class="hero-img" src="/final/images/thanks.jpg" alt="thank you in scrabble letters">
             </div>
-            <div class="forecast">
-              <h2>Three Day Forecast</h2>
-            <table class="table">
-            <tbody>
-              <tr>
-                <th><span id="day1"></span></th>
-                <th><span id="day2"></span></th>
-                <th><span id="day3"></span></th>
-              </tr>
-              <tr>
-                  <td><span id="forecastTemp1"></span>°F</td>
-                  <td><span id="forecastTemp2"></span>°F</td>
-                  <td><span id="forecastTemp3"></span>°F</td>
-              </tr>
-            </tbody>  
-            </table>
+            <div class="attributions">
+                <h2>Attributions</h2>
+                <p>Live Weather provdided by <a href="https://openweathermap.org/" target="_blank">OpenWeather</a></p>
+                <P>Town History and demographics: <a href="https://en.wikipedia.org/wiki/Saratoga_Springs,_Utah" target="_blank">Wikipedia</a></P>
+                <p>Saratoga Springs Temple info: <a href="https://churchofjesuschristtemples.org/saratoga-springs-utah-temple/" target="_blank">The Church of Jesus Christ of Latter Day Saints</a></p>
             </div>
 
-            <div class="cards">
-              <h2>Our Members</h2>
-              <a id="toggle" href="#" onclick="toggleList()">&#9783;</a>
-            </div>
+
+
             
             <div class="contact">
                 <h2>Contact Us!</h2>
