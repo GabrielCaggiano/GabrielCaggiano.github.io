@@ -43,3 +43,7 @@ fetch(requestURL)
     }
     
   });
+
+  function toggleList() {
+    document.getElementsByClassName("cards")[0].classList.toggle("grid");
+    }

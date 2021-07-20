@@ -425,3 +425,9 @@ footer a:hover {
     max-width: 320px;
     padding-top: 15px;
 }
+
+.cards a {
+    color: #46237A;
+    text-decoration: none;
+}
+
