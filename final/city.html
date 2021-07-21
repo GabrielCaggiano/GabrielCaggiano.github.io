@@ -16,6 +16,7 @@
   <script src="/final/js/weather.js" async></script>
 </head>
     <body>
+      <div id="content">
       <div class="alert" id="alert">
       </div>
         <header>
@@ -33,8 +34,8 @@
           </nav>
           <main>
             <div class="hero">
-                <h2>Home</h2>
-              <img class="hero-img" src="/lesson9/images/hero.jpg" alt="neighborhood aerial photo">
+                <h2>Saratoga Springs</h2>
+              <img class="hero-img" src="/final/images/saratoga-mtview01.jpeg" alt="mountain view of saratoga springs">
               <div class="weather-div">
                 <p class="weather">
                   <strong>Current Weather</strong><br>
@@ -61,7 +62,7 @@
             </tbody>  
             </table>
             </div>
-
+            <div class="city-grid">
             <div class="history">
               <h2>History</h2>
               <p>Near the source of the Jordan River, early settlers of the area found some natural hotsprings, and decided to to create a resort named "Beck's Saratoga Springs", the name being inspired by the original resort in New York.  This occurred around 1884, and the area grew around trhe resort.  In the late 1990's, landowners came together and incorporated the town of Saratoga Springs, which later became a city in May of 2001.  The area continues to urbanize and is among the fastest growing cities in the nation.</p>
@@ -73,15 +74,30 @@
                 The total area of the city is about 23.36 square miles, with over 99% being land and undr 1% being water.  The elevation is 4,505 feet, making it a little but of an adjustment for those coming from near sea level.
               </p>
             </div>
-            <div class="current-events">
-              <h2>Current Events</h2>
+            </div>
+            <div class="cards">
+              <h2 class="current-h2">Current Events</h2>
+              <section class="event1">
+              <h3>Knolls Fire</h3>
+              <img class="fire" src="/final/images/fire.jpg" alt="fire fighters fighting fire">
               <p>
-                To the dismay of many, last year on June 28th 2020, a wildfire broke out in Saratoga Springs.  Known as the Knolls Fire, it prompted the evacuation of about 13,000 people from 3,100 homes.  Luckily the fire stopped at the road known as Redwood and did not continue to do more damage.<br>
-
-                Costco comes to Saratoga Springs!  Costco announced they would be building a new location in Saratoga Springs in June of 2019, and the new location finally opened on August 13th, 2020.  They will celebrate their one year anniversary of being here in the area next month.<br>
-                
+                To the dismay of many, last year on June 28th 2020, a wildfire broke out in Saratoga Springs.  Known as the Knolls Fire, it prompted the evacuation of about 13,000 people from 3,100 homes.  Luckily the fire stopped at the road known as Redwood and did not continue to do more damage.
+              </p>
+              </section>
+              <section class="event2">
+              <h3>Costco comes to Saratoga Springs</h3>
+              <img class="costco" src="/final/images/costco-close.jpeg" alt="A Costco storefront">
+              <p>
+                Costco comes to Saratoga Springs!  Costco announced they would be building a new location in Saratoga Springs in June of 2019, and the new location finally opened on August 13th, 2020.  They will celebrate their one year anniversary of being here in the area next month.
+              </p>
+              </section>
+              <section class="event3">
+              <h3>Saratoga Springs Temple</h3>
+              <img class="temple" src="/final/images/temple-eastside-front.jpeg">
+              <p>
                 Announced in 2017, the Saratoga Springs Mormon Temple is well on its way.  Ground was broken in late 2019 and constrtuction has progressed smoothly despite the pandemic.  It is expected to be fully compelted by mid to late 2022.  When finished, it will be the eighteenth temple built in Utah and the fifth built in Utah County.
               </p>
+              </section>
             </div>
 
 
@@ -122,5 +138,6 @@
     });
 
     </script>
+    </div>
     </body>
 </html>  

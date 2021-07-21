@@ -25,7 +25,7 @@ fetch(requestURL)
         let image = document.createElement('img');
         let url = document.createElement('a');
 
-        card.className = "card";
+        card.className = "card" + i;
         name.textContent = cards[i].name;
         motto.textContent = cards[i].motto;
         founded.textContent = "Founded in: " + cards[i].yearFounded;

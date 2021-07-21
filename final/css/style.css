@@ -29,6 +29,10 @@ header {
     text-align: center;
 }
 
+h1 {
+    width: 100%;
+}
+
 header,
 nav,
 main,
@@ -127,11 +131,14 @@ main div {
 }
 
 main h2 {
-    margin: 0 10px;
+    margin: 10px auto;
+    max-width: 375px;
+    width: 100%;
 }
 
-.hero h2{
-    margin: unset;
+.hero h2 {
+    max-width: 690px;
+    width: 100%;
 }
 
 .alert {
@@ -160,9 +167,12 @@ main h2 {
 .table {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
     width: 100%;
-    max-width: 1024px;
+    max-width: 335px;
     text-align: center;
+    border: 2px solid #46237A;
+    border-radius: 4px;
 }
 
 .cards {
@@ -193,13 +203,23 @@ main h2 {
     border: 2px solid #46237A;
     background-color: #FCFCFC;
     margin: 0 auto;
-    width: 335px;
+    max-width: 335px;
     padding-bottom: 10px;
 }
 
 .cards section a:hover {
     background-color: #46237A;
     color: #FCFCFC;
+}
+
+.cards img {
+    max-width: 320px;
+    padding-top: 15px;
+}
+
+.cards a {
+    color: #46237A;
+    text-decoration: none;
 }
 
 .join {
@@ -243,9 +263,8 @@ main h2 {
   }
 
 main p{
-    width: 335px;
+    max-width: 320px;
     margin: 10px auto;
-    padding: 10px;
 }
 
 .join strong {
@@ -421,13 +440,23 @@ footer a:hover {
 
 /*------Directory------*/
 
-.cards img {
-    max-width: 320px;
-    padding-top: 15px;
+/*------City------*/
+
+.current-events {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    align-items: center;
+    justify-content: center;
 }
 
-.cards a {
-    color: #46237A;
-    text-decoration: none;
+.current-events section img {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.current-events h3 {
+    margin: 20px 20px;
 }
 
