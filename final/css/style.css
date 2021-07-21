@@ -109,6 +109,7 @@ nav a:hover {
 
 .hero img {
     width: 100%;
+    max-width: 720px;
 }
 
 .weather {
@@ -136,9 +137,20 @@ main h2 {
     width: 100%;
 }
 
+main img {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.social img {
+    width: 50px;
+}
+
 .hero h2 {
     max-width: 690px;
     width: 100%;
+    margin: 0 auto;
 }
 
 .alert {
@@ -225,7 +237,6 @@ main h2 {
 .join {
     display: grid;
     grid-template-columns: 1fr;
-    align-content: center;
 }
 
 .join button {
@@ -260,7 +271,17 @@ main h2 {
     background-color: #30ac76;
     box-shadow: 0 2px #666;
     transform: translateY(2px);
-  }
+}
+
+.purpose {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.events {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
 main p{
     max-width: 320px;

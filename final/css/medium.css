@@ -69,10 +69,18 @@
         width: 100%;
     }
 
-    .events ul li {
+    /*.events ul li {
         text-align: center;
         list-style: none;
+    }*/
+
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
     }
+
+    
 
     .grid {
         display: grid;

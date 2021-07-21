@@ -14,7 +14,7 @@
 
     .hero h2 {
         max-width: 1024px;
-        
+
     }
 
     .cards {
@@ -35,6 +35,22 @@
     }
 
     .event3 {
+        grid-column: 3/4;
+    }
+
+    .cards h2 {
+        grid-column: 1/4;
+    }
+
+    .card0, .card1 {
+        grid-column: 1/2;
+    }
+
+    .card2, .card3, .card4 {
+        grid-column: 2/3;
+    }
+
+    .card5, .card6 {
         grid-column: 3/4;
     }
     
