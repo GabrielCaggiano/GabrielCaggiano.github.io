@@ -14,7 +14,10 @@
 
     .hero h2 {
         max-width: 1024px;
+    }
 
+    .hero img {
+        max-width: 1024px;
     }
 
     .cards {
