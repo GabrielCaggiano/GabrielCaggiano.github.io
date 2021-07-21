@@ -2,6 +2,8 @@
 
     #content {
         max-width: 1440px;
+        border-left: 2px solid #46237A;
+        border-right: 2px solid #46237A;
     }
 
     main {
@@ -23,6 +25,22 @@
     .cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .dir-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dir-cards h2 {
+        grid-column: 1/4;
+    }
+
+    .dir-cards a {
+        grid-column: 1/4;
     }
 
     .current-h2 {

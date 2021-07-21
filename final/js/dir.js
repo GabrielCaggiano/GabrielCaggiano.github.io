@@ -38,12 +38,12 @@ fetch(requestURL)
         card.appendChild(hq);
         card.appendChild(url);
 
-        document.querySelector('div.cards').appendChild(card);
+        document.querySelector('div.dir-cards').appendChild(card);
         
     }
     
   });
 
   function toggleList() {
-    document.getElementsByClassName("cards")[0].classList.toggle("grid");
+    document.getElementsByClassName("dir-cards")[0].classList.toggle("grid");
     }

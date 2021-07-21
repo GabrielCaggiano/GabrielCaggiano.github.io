@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100&family=Ubuntu+Condensed&display=swap');
 
+
 h1, h2, h3, h4, h5, h6 {
     color: #FCFCFC;
     background-color: #46237A;
@@ -460,6 +461,59 @@ footer a:hover {
 }
 
 /*------Directory------*/
+
+.dir-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    grid-gap: 1em;
+    grid-gap: 1em;
+}
+
+.dir-cards a {
+    display: none;
+}
+
+.dir-cards p,a {
+    font-size: 1.2em;
+    padding: 2px;
+    margin: 0 auto;
+}
+
+.dir-cards h3,h4 {
+    background-color: #3DDC97;
+    color: #46237A;
+}
+
+.dir-cards h4 {
+    border-bottom: 2px solid #46237A;
+}
+
+.dir-cards section {
+    border-radius: 4px;
+    border: 2px solid #46237A;
+    background-color: #FCFCFC;
+    margin: 0 auto;
+    max-width: 335px;
+    padding-bottom: 10px;
+}
+
+.dir-cards section a:hover {
+    background-color: #46237A;
+    color: #FCFCFC;
+}
+
+.dir-cards img {
+    max-width: 320px;
+    padding-top: 15px;
+}
+
+.dir-cards a {
+    color: #46237A;
+    text-decoration: none;
+}
+
+
 
 /*------City------*/
 

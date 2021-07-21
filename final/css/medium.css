@@ -80,6 +80,10 @@
         grid-gap: 1em;
     }
 
+    .dir-cards a {
+        display: block;
+    }
+
     
 
     .grid {
