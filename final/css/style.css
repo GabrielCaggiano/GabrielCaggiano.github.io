@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100&family=Ubuntu+Condensed&display=swap');
 
+
 h1, h2, h3, h4, h5, h6 {
     color: #FCFCFC;
     background-color: #46237A;
@@ -27,6 +28,10 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+h1 {
+    width: 100%;
 }
 
 header,
@@ -105,6 +110,7 @@ nav a:hover {
 
 .hero img {
     width: 100%;
+    max-width: 720px;
 }
 
 .weather {
@@ -127,11 +133,25 @@ main div {
 }
 
 main h2 {
-    margin: 0 10px;
+    margin: 10px auto;
+    max-width: 375px;
+    width: 100%;
 }
 
-.hero h2{
-    margin: unset;
+main img {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.social img {
+    width: 50px;
+}
+
+.hero h2 {
+    max-width: 690px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .alert {
@@ -160,9 +180,12 @@ main h2 {
 .table {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
     width: 100%;
-    max-width: 1024px;
+    max-width: 335px;
     text-align: center;
+    border: 2px solid #46237A;
+    border-radius: 4px;
 }
 
 .cards {
@@ -193,7 +216,7 @@ main h2 {
     border: 2px solid #46237A;
     background-color: #FCFCFC;
     margin: 0 auto;
-    width: 335px;
+    max-width: 335px;
     padding-bottom: 10px;
 }
 
@@ -202,10 +225,19 @@ main h2 {
     color: #FCFCFC;
 }
 
+.cards img {
+    max-width: 320px;
+    padding-top: 15px;
+}
+
+.cards a {
+    color: #46237A;
+    text-decoration: none;
+}
+
 .join {
     display: grid;
     grid-template-columns: 1fr;
-    align-content: center;
 }
 
 .join button {
@@ -240,12 +272,21 @@ main h2 {
     background-color: #30ac76;
     box-shadow: 0 2px #666;
     transform: translateY(2px);
-  }
+}
+
+.purpose {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.events {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
 main p{
-    width: 335px;
+    max-width: 320px;
     margin: 10px auto;
-    padding: 10px;
 }
 
 .join strong {
@@ -421,13 +462,76 @@ footer a:hover {
 
 /*------Directory------*/
 
-.cards img {
+.dir-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    grid-gap: 1em;
+    grid-gap: 1em;
+}
+
+.dir-cards a {
+    display: none;
+}
+
+.dir-cards p,a {
+    font-size: 1.2em;
+    padding: 2px;
+    margin: 0 auto;
+}
+
+.dir-cards h3,h4 {
+    background-color: #3DDC97;
+    color: #46237A;
+}
+
+.dir-cards h4 {
+    border-bottom: 2px solid #46237A;
+}
+
+.dir-cards section {
+    border-radius: 4px;
+    border: 2px solid #46237A;
+    background-color: #FCFCFC;
+    margin: 0 auto;
+    max-width: 335px;
+    padding-bottom: 10px;
+}
+
+.dir-cards section a:hover {
+    background-color: #46237A;
+    color: #FCFCFC;
+}
+
+.dir-cards img {
     max-width: 320px;
     padding-top: 15px;
 }
 
-.cards a {
+.dir-cards a {
     color: #46237A;
     text-decoration: none;
+}
+
+
+
+/*------City------*/
+
+.current-events {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.current-events section img {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.current-events h3 {
+    margin: 20px 20px;
 }
 

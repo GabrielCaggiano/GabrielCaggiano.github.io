@@ -7,10 +7,14 @@ fetch(requestURL)
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
 
+    var x = Math.round(Math.random());
+    var y = Math.floor(Math.random() * (4 - 2 + 1) + 2);
+    var z = Math.floor(Math.random() * (6 - 5 + 1) + 5);
+
     const cards = jsonObject['cards'];
     for (let i = 0; i < cards.length; i++ ) {
 
-        if (i == 0 || i == 1 || i == 2){
+        if (i == x || i == y || i == z) {
 
         let card = document.createElement('section');
         let name = document.createElement('h3');
@@ -21,7 +25,7 @@ fetch(requestURL)
         let image = document.createElement('img');
         let url = document.createElement('a');
 
-        card.className = "card";
+        card.className = "card" + i;
         name.textContent = cards[i].name;
         motto.textContent = cards[i].motto;
         founded.textContent = "Founded in: " + cards[i].yearFounded;
@@ -29,11 +33,12 @@ fetch(requestURL)
         hq.textContent = "Headquarters: " + cards[i].headquarters;
         url.textContent = cards[i].website;
         url.setAttribute('href', cards[i].website);
-        image.setAttribute('src', "/lesson9/images/" + cards[i].photo);
+        image.setAttribute('src', "/final/images/" + cards[i].photo);
         image.setAttribute('alt', "photo of " + cards[i].name);
 
         card.appendChild(name);
         card.appendChild(motto);
+        card.appendChild(image);
         card.appendChild(founded);
         card.appendChild(founder);
         card.appendChild(hq);
