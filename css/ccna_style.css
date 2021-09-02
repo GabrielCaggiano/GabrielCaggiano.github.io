@@ -47,9 +47,26 @@ nav ul a:hover {
     background-color: #1E1E24;
 }
 
+div {
+  color: #1E1E24;
+}
+
+div a {
+  text-decoration: none;
+}
+
 p a {
   color: #FFBA08;
 }
+
+ol {
+  list-style-type: lower-alpha;
+}
+
+li {
+  width: 50px;
+}
+
 
 .part-heading {
     text-align: center;
@@ -89,3 +106,14 @@ strong {
   color: #FFBA08;
   background-color: #1E1E24;
 }
+
+
+.ans-visible {
+  color: #FFBA08;
+  background-color: #1E1E24;
+}
+
+.dikta {
+  display: none;
+}
+

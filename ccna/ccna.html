@@ -5,7 +5,9 @@
         <meta charset="utf-8">
         <meta name="author" content="Gabriel Caggiano">
         <meta name="description" content="My study notes from CCNA 200-301 Official Cert Guide">
+        <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/ccna_style.css">
+        <script src="/ccna/js/js.js" async></script>
         <script src="/java_script/ccna_js.js" async></script>
     </head>
 
@@ -38,10 +40,20 @@
                 <h2 class="chapter-heading"> Chapter 1 - Intro to TCP/IP Networking</h2>
                 <div>
                     <h3>DIKTA?</h3>
-                    <ul>
-                        <li>Which of the following protocols are examples of TCP/IP transport layer protocols?</li>
-                            
-                    </ul>
+                    <a id="selector1" href="#" onclick="toggleDiv()">&#x25bc;</a>
+                    <div id="dikta1" class="dikta">
+                        <button onclick="showAnswers()">Show Answers</button>
+                        <button onclick="hideAnswers()">Hide Answers</button>
+                        <p>Which of the following protocols are examples of TCP/IP Transport layer protocols?</p>
+                        <ol>
+                            <li>Ethernet</li>
+                            <li>HTTP</li>
+                            <li>IP</li>
+                            <li class="ans-hidden">UDP</li>
+                            <li>SMTP</li>
+                            <li class="ans-hidden">TCP</li>
+                        </ol>
+                    </div>
                 </div>
                 <p>
                     Notes
