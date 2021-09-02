@@ -53,6 +53,7 @@ div {
 
 div a {
   text-decoration: none;
+  color: #1E1E24;
 }
 
 p a {
@@ -114,6 +115,6 @@ strong {
 }
 
 .dikta {
-  display: none;
+  display: block;
 }
 
