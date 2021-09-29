@@ -1,3 +1,4 @@
+#!/usr/local/bin/python
 age = input("Enter your age: ")
 int_age = int(age)
 if int_age < 21:
