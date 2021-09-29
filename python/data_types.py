@@ -1,3 +1,5 @@
+#!/usr/local/bin/python
+
 #this is a string or str
 print("This is s string data type")
 
