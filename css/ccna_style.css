@@ -29,6 +29,10 @@ p {
   align-items: center;
 }
 
+main {
+  background-image: url("/mexican_remi/images/mexican_remi.jpg") ;
+}
+
 nav ul a {
     color: #1E1E24;
     padding: 0px 5px 5px 5px;
