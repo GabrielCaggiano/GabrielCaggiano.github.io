@@ -33,9 +33,9 @@ do {
     $rules = Read-Host
 
     if ($rules -eq 'no' -or $rules -eq 'n') {
-        Write-Host 'We each decide if we are going to pick rock, paper, or scissors secretly, then we reveal what we picked.' -ForegroundColor Blue
+        Write-Host 'We each decide if we are going to pick rock, paper, scissors, lizard or spock secretly, then we reveal what we picked.' -ForegroundColor Blue
         Start-Sleep 1
-        Write-Host 'Rock beats scissors, scissors beats paper, paper beats rock.' -ForegroundColor Blue
+        Write-Host 'Rock crushes scissors and lizard, scissors decapitates lizard and cuts paper, paper disproves Spock and covers rock, Spock smashes scissors and vaporizes rock, lizard eats paper and poisons Spock' -ForegroundColor Blue
         Start-Sleep 1
         Write-Host 'Best 2 out of 3 wins.' -ForegroundColor Blue
         Start-Sleep 1
@@ -44,10 +44,26 @@ do {
         Write-Host "Let's play!" -ForegroundColor Blue
     }
     else {
-        Write-Host 'It was a simple question...'
+        $random = Get-Random -Minimum 0 -Maximum 9 
+        $result = switch ($random) {
+            0 {'A simple yes or no would have been fine'}
+            1 {'Que?  No entiendes ingles?'}
+            2 {'You have seen much, but do you understand?  Obviously not.'}
+            3 {'You donut!'}
+            4 {'per aspera ad astra'}
+            5 {'mors mortem parit'}
+            6 {'lux e tenebris'}
+            7 {'6c6762'}
+            8 {'死者を思い出す'}
+            9 {'鬼滅の刃'}
+            Default {'chi non fa, non falla'}
+        }
+        
+        Write-Host $result
         Start-Sleep 2
         exit
-    }
+        }
+
     $game_count = 0
     $compy_game_wins = 0
     $user_game_wins = 0
