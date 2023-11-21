@@ -85,7 +85,7 @@ do {
     $last_user_choice = ''
 
     do {
-        #this switch takes the last user choice and if its empty allows the computer to choose from all options, if it has a guess, then it looks at what two options the previous guess defeats.  It then looks at those two options and shooses the options that would defeat them, this gives the computer a 33% chance of a tie if the user repeates their choice.  Example if the user chose rock, rock defeats lizard and scissors, so the computer would choose between rock and spock since those both defeat scissors, and it would also choose between rock and scissors since those both defeat lizard.  So 5 choices becomes limited to only 3.
+        #this switch takes the last user choice and if its empty allows the computer to choose from all options, if it has a guess, then it looks at what two options the previous guess defeats.  It then looks at those two options and shooses the options that would defeat them, this gives the computer a 33% chance of a tie and 33% chance of winning if the user repeates their choice so 66% chance of the user not winning.  Example if the user chose rock, rock defeats lizard and scissors, so the computer would choose between rock and spock since those both defeat scissors, and it would also choose between rock and scissors since those both defeat lizard.  So 5 choices becomes limited to only 3.
         $compy_choice = switch ($last_user_choice) {
             'rock'     {'rock', 'scissors', 'spock' | Get-Random }
             'paper'    {'paper', 'lizard', 'spock' | Get-Random}
@@ -98,7 +98,7 @@ do {
         
         Write-Host 'I am choosing' -ForegroundColor Blue
         Start-sleep 2
-        Write-Host 'I have my choice $compy_choice'
+        Write-Host "I have my choice $compy_choice"
         Start-Sleep 1
         Write-Host 'What will you choose?  You can enter "r" for rock, "p" for paper, "sc" for scissors, "l" for lizard or "sp" for spock.' -ForegroundColor Blue
         $user_choice = Read-Host
@@ -113,6 +113,7 @@ do {
         }
 
         $last_user_choice = $user_choice
+        Write-Host $last_user_choice
 
 
         <#I am not sure what I did wrong with my switch statement here.  It seemed to evaluate something like 'sr' as equal to anything with 's' in it, so it
@@ -151,11 +152,6 @@ do {
             Write-Host "I win!  I chose $compy_choice and you chose $user_choice." -ForegroundColor Red
             $compy_game_wins+=1
         }
-        #elseif ($compy_choice -eq 'rock' -and $user_choice -eq 'scissors') {
-        #    Write-Host "I win!  I chose $compy_choice and you chose $user_choice." -ForegroundColor Red
-        #    $compy_game_wins+=1
-        #}
-
         elseif ($compy_choice -eq 'paper' -and $user_choice -eq 'paper') {
             Write-Host "It is a tie!" "  I chose $compy_choice and you chose $user_choice."
         }
@@ -181,7 +177,25 @@ do {
         elseif ($compy_choice -eq 'lizard' -and $user_choice -eq 'lizard') {
             Write-Host "It is a tie!" "  I chose $compy_choice and you chose $user_choice."
         }
-        elseif 
+        elseif ($compy_choice -eq 'lizard' -and $user_choice -eq 'rock' -or $user_choice -eq 'scissors'){
+            Write-Host "You win! I chose $compy_choice and you chose $user_choice." -ForegroundColor Green
+            $user_game_wins+=1 
+        }
+        elseif ($compy_choice -eq 'lizard' -and $user_choice -eq 'paper' -or $user_choice -eq 'spock') {
+            Write-Host "I win!  I chose $compy_choice and you chose $user_choice." -ForegroundColor Red
+            $compy_game_wins+=1
+        }
+        elseif ($compy_choice -eq 'spock' -and $user_choice -eq 'spock') {
+            Write-Host "It is a tie!" "  I chose $compy_choice and you chose $user_choice."
+        }
+        elseif ($compy_choice -eq 'spock' -and $user_choice -eq 'paper' -or $user_choice -eq 'lizard') {
+            Write-Host "You win! I chose $compy_choice and you chose $user_choice." -ForegroundColor Green
+            $user_game_wins+=1
+        }
+        elseif ($compy_choice -eq 'spock' -and $user_choice -eq 'rock' -or $user_choice -eq 'scissors') {
+            Write-Host "I win!  I chose $compy_choice and you chose $user_choice." -ForegroundColor Red
+            $compy_game_wins+=1
+        }
         else {
             Write-Host "You lose. Your entry was $user_choice"
             $compy_game_wins+=1
