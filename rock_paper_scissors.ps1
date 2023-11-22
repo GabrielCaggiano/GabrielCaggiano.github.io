@@ -35,6 +35,9 @@ $user_wins=0
 
 We need to add in some coding that tracks the user input and remembers it for the 2nd and 3rd rounds of the game, and allows the computer to "remember" the last user guess and then have rules on how the computer has to choose based on the last user choice #>
 
+#from the video in the resources, the correct strategy is, if you lose, play the thing that didnt come up, so if they played rock, play paper next, hihg chance of winners choosing the same thing twice.  If you lose, then you should play the thing your oppenent just played, example if they played rock, then you shold play rock next
+#might need to add some code that has the computer evaluate whether they won or lost, and then choose accordingly, could add an if statement that still uses a switch, but now with two switches to determine computer choice based on whether the computer just won or lost
+
 do {
     Write-Host "Let's play rock, paper, scissors, lizard, Spock.  Do you know how to play?" -ForegroundColor Blue
     $rules = Read-Host
