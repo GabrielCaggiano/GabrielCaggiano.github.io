@@ -11,8 +11,8 @@ body {
 .header {
   grid-area: header;
   color: #DDDFDF;
-  background-color: #484A47;
-  padding: 30px;
+  background-color: #5C6D70;
+  /*padding: 30px;*/
   text-align: center;
   font-size: 35px;
 }
@@ -55,6 +55,7 @@ body {
   background-color: #484A47;
   padding: 10px;
   text-align: center;
+  color: #DDDFDF;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
