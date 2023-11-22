@@ -15,7 +15,10 @@ body {
   /*padding: 30px;*/
   text-align: center;
   font-size: 35px;
-  max-width: 300px;
+}
+
+.header-pic {
+    max-width: 300px;
 }
 
 /* The grid container */
