@@ -10,8 +10,8 @@ body {
 /* Style the header */
 .header {
   grid-area: header;
-  color: #484A47;
-  background-color: #DDDFDF;
+  color: #DDDFDF;
+  background-color: #484A47;
   padding: 30px;
   text-align: center;
   font-size: 35px;
