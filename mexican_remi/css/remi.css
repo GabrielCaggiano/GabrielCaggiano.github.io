@@ -10,7 +10,8 @@ body {
 /* Style the header */
 .header {
   grid-area: header;
-  background-color: #f1f1f1;
+  color: #484A47;
+  background-color: #DDDFDF;
   padding: 30px;
   text-align: center;
   font-size: 35px;
@@ -30,7 +31,7 @@ body {
 .middle,
 .right {
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  /*height: 300px;  Should be removed. Only for demonstration */
 }
 
 /* Style the left column */
@@ -51,7 +52,7 @@ body {
 /* Style the footer */
 .footer {
   grid-area: footer;
-  background-color: #f1f1f1;
+  background-color: #484A47;
   padding: 10px;
   text-align: center;
 }
@@ -68,5 +69,12 @@ body {
   }
 }
 
-
+/* 
+Colors
+  484A47 outer space
+  5C6D70 paynes gray
+  A37774 old rose
+  DDDFDF platinum
+  E0AC9D melon
+  */
 
