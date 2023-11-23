@@ -7,6 +7,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.h2,
+.h3 {
+    color: #484A47;
+    padding-left: 10px;
+}
+
 /* Style the header */
 .header {
   grid-area: header;
@@ -31,11 +37,17 @@ body {
   /* grid-column-gap: 10px; - if you want gap between the columns */
 } 
 
+.p {
+    padding: 10px;
+}
+
 .left,
 .middle,
 .right {
   padding: 10px;
   /*height: 300px;  Should be removed. Only for demonstration */
+  padding: 10px;
+  background-color: #DDDFDF;
 }
 
 /* Style the left column */
@@ -62,6 +74,7 @@ body {
   color: #DDDFDF;
 }
 
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
   .grid-container  {
@@ -76,10 +89,10 @@ body {
 
 /* 
 Colors
-  484A47 outer space
-  5C6D70 paynes gray
-  A37774 old rose
-  DDDFDF platinum
-  E0AC9D melon
+  #484A47 outer space
+  #5C6D70 paynes gray
+  #A37774 old rose
+  #DDDFDF platinum
+  #E0AC9D melon
   */
 
