@@ -95,7 +95,7 @@ do {
             'scissors' {'paper','paper','paper','paper','paper','paper','paper','paper','paper','paper','rock', 'paper', 'scissors', 'lizard', 'spock' | Get-Random}
             'lizard'   {'spock','spock','spock','spock','spock','spock','spock','spock','spock','spock','rock', 'paper', 'scissors', 'lizard', 'spock' | Get-Random}
             'spock'    {'scissors','scissors','scissors','scissors','scissors','scissors','scissors','scissors','scissors','scissors','rock', 'paper', 'scissors', 'lizard', 'spock' | Get-Random}                
-            Default    {'rock', 'paper', 'scissors', 'lizard', 'spock' | Get-Random}
+            Default    {'rock', 'paper', 'paper', 'paper', 'paper', 'paper', 'scissors', 'lizard', 'spock' | Get-Random}
         }
 
         $last_compy_choice = $compy_choice
