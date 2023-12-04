@@ -65,6 +65,10 @@ body {
   grid-area: right;
 }
 
+.glossary-img {
+  max-width: 330px;
+}
+
 /* Style the footer */
 .footer {
   grid-area: footer;
