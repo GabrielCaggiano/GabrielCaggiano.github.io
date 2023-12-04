@@ -35,7 +35,7 @@ $user_wins=0
 
 We need to add in some coding that tracks the user input and remembers it for the 2nd and 3rd rounds of the game, and allows the computer to "remember" the last user guess and then have rules on how the computer has to choose based on the last user choice #>
 
-#from the video in the resources, the correct strategy is, if you lose, play the thing that didnt come up, so if they played rock, play paper next, hihg chance of winners choosing the same thing twice.  If you lose, then you should play the thing your oppenent just played, example if they played rock, then you shold play rock next
+#from the video in the resources, the correct strategy is, if you lose, play the thing that didnt come up, so if they played rock, play paper next, high chance of winners choosing the same thing twice.  If you win, then you should play the thing your oppenent just played or play the thing that would win against the thing you just played, example if they played rock, then you shold play rock next, or if you played paper, they will likely play scissors, so play rock.
 #might need to add some code that has the computer evaluate whether they won or lost, and then choose accordingly, could add an if statement that still uses a switch, but now with two switches to determine computer choice based on whether the computer just won or lost
 
 do {
@@ -85,23 +85,24 @@ do {
     $game_count = 0
     $compy_game_wins = 0
     $user_game_wins = 0
-    $last_user_choice = ''
+    #$last_user_choice = ''
+    $last_compy_choice = ''
 
     do {
-        #this switch takes the last user choice and if its empty allows the computer to choose from all options, if it has a guess, then it looks at what two options the previous guess defeats.  It then looks at those two options and shooses the options that would defeat them, this gives the computer a 33% chance of a tie and 33% chance of winning if the user repeates their choice so 66% chance of the user not winning.  Example if the user chose rock, rock defeats lizard and scissors, so the computer would choose between rock and spock since those both defeat scissors, and it would also choose between rock and scissors since those both defeat lizard.  So 5 choices becomes limited to only 3.
-        $compy_choice = switch ($last_user_choice) {
-            'rock'     {'rock', 'scissors', 'spock' | Get-Random }
-            'paper'    {'paper', 'lizard', 'spock' | Get-Random}
-            'scissors' {'scissors', 'rock', 'lizard' | Get-Random}
-            'lizard'   {'lizard', 'paper', 'scissors' | Get-Random}
-            'spock'    {'spock', 'rock', 'paper' | Get-Random}
+        $compy_choice = switch ($last_compy_choice) {
+            'rock'     {'lizard','lizard','lizard','lizard','lizard','lizard','lizard','lizard','lizard','lizard','rock', 'paper', 'scissors', 'lizard', 'spock' | Get-Random}
+            'paper'    {'rock','rock','rock','rock','rock','rock','rock','rock','rock','rock','rock', 'paper', 'scissors', 'lizard', 'spock' | Get-Random}
+            'scissors' {'paper','paper','paper','paper','paper','paper','paper','paper','paper','paper','rock', 'paper', 'scissors', 'lizard', 'spock' | Get-Random}
+            'lizard'   {'spock','spock','spock','spock','spock','spock','spock','spock','spock','spock','rock', 'paper', 'scissors', 'lizard', 'spock' | Get-Random}
+            'spock'    {'scissors','scissors','scissors','scissors','scissors','scissors','scissors','scissors','scissors','scissors','rock', 'paper', 'scissors', 'lizard', 'spock' | Get-Random}                
             Default    {'rock', 'paper', 'scissors', 'lizard', 'spock' | Get-Random}
         }
 
+        $last_compy_choice = $compy_choice
         
         Write-Host 'I am choosing' -ForegroundColor Blue
         Start-sleep 2
-        Write-Host "I have my choice $compy_choice"
+        Write-Host "I have my choice"
         Start-Sleep 1
         Write-Host 'What will you choose?  You can enter "r" for rock, "p" for paper, "sc" for scissors, "l" for lizard or "sp" for spock.' -ForegroundColor Blue
         $user_choice = Read-Host
@@ -115,87 +116,104 @@ do {
             Default {$user_choice='invalid'}
         }
 
-        $last_user_choice = $user_choice
-        Write-Host $last_user_choice
-
-
-        <#I am not sure what I did wrong with my switch statement here.  It seemed to evaluate something like 'sr' as equal to anything with 's' in it, so it
-        would print out multiple options, then it would not do the expression at the end to add 1 to wins for each player, maybe you can give me a pointer, I
-        felt like a switch statement would be better looking than the really long if else statement I have going on.  But I am short on time this week so
-        I did not want to lose too much time on it.#>
-
-
-        <#$compare = "$compy_choice$user_choice"
-
-        switch ($compare) {
-            {$_ -eq 'rr' -or $_ -eq 'rrock'}     {Write-Host "It is a tie!" "  I chose $compy_choice and you chose $user_choice." -ForegroundColor Blue}
-            {$_ -eq 'rp' -or $_ -eq 'rpaper'}    {Write-Host "You win!" -ForegroundColor Green "  I chose $compy_choice and you chose $user_choice." }  {$user_wins+=1}
-            {$_ -eq 'rs' -or $_ -eq 'rscissors'} {Write-Host "I win!"-ForegroundColor Red "  I chose $compy_choice and you chose $user_choice." }{$compy_wins   +=1}
-            {$_ -eq 'pr' -or $_ -eq 'prock'}     {Write-Host "I win!"-ForegroundColor Red "  I chose $compy_choice and you chose $user_choice." }{$compy_wins   +=1}
-            {$_ -eq 'pp' -or $_ -eq 'ppaper'}    {Write-Host "It is a tie!" "  I chose $compy_choice and you chose $user_choice." -ForegroundColor Blue}
-            {$_ -eq 'ps' -or $_ -eq 'pscissors'} {Write-Host "You win!" -ForegroundColor Green "  I chose $compy_choice and you chose $user_choice." }  {$user_wins+=1}
-            {$_ -eq 'sr' -or $_ -eq 'srock'}     {Write-Host "You win!" -ForegroundColor Green "  I chose $compy_choice and you chose $user_choice." }  {$user_wins+=1}        
-            {$_ -eq 'sp' -or $_ -eq 'spaper'}    {Write-Host "I win!"-ForegroundColor Red "  I chose $compy_choice and you chose $user_choice." }{$compy_wins   +=1}
-            {$_ -eq 'ss' -or $_ -eq 'sscissors'} {Write-Host "It is a tie!" "  I chose $compy_choice and you chose $user_choice." -ForegroundColor Blue}
-            Default {}
-        }#>
+        #$last_user_choice = $user_choice
 
         Write-Host 'Ready?' -ForegroundColor Blue
         Start-Sleep 2
         Write-Host 'Rock, paper scissors, shoot!' -ForegroundColor Blue
         Start-Sleep 1
         if ($compy_choice -eq 'rock' -and $user_choice -eq 'rock') {
-            Write-Host "It is a tie!" "  I chose $compy_choice and you chose $user_choice." 
+            Write-Host "It is a tie!  I chose $compy_choice and you chose $user_choice." 
         }
-        elseif ($compy_choice -eq 'rock' -and $user_choice -eq 'paper' -or $user_choice -eq 'spock' ) {
+        elseif ($compy_choice -eq 'rock' -and $user_choice -eq 'paper') {
             Write-Host "You win!  I chose $compy_choice and you chose $user_choice." -ForegroundColor Green
             $user_game_wins+=1 
         }
-        elseif ($compy_choice -eq 'rock' -and $user_choice -eq 'lizard' -or $user_choice -eq 'scissors' ) {
+        elseif ($compy_choice -eq 'rock' -and $user_choice -eq 'spock' ) {
+            Write-Host "You win!  I chose $compy_choice and you chose $user_choice." -ForegroundColor Green
+            $user_game_wins+=1 
+        }
+        elseif ($compy_choice -eq 'rock' -and $user_choice -eq 'lizard') {
+            Write-Host "I win!  I chose $compy_choice and you chose $user_choice." -ForegroundColor Red
+            $compy_game_wins+=1
+        }
+        elseif ($compy_choice -eq 'rock' -and $user_choice -eq 'scissors' ) {
             Write-Host "I win!  I chose $compy_choice and you chose $user_choice." -ForegroundColor Red
             $compy_game_wins+=1
         }
         elseif ($compy_choice -eq 'paper' -and $user_choice -eq 'paper') {
-            Write-Host "It is a tie!" "  I chose $compy_choice and you chose $user_choice."
+            Write-Host "It is a tie!  I chose $compy_choice and you chose $user_choice."
         }
-        elseif ($compy_choice -eq 'paper' -and $user_choice -eq 'scissors' -or $user_choice -eq 'lizard' ) {
+        elseif ($compy_choice -eq 'paper' -and $user_choice -eq 'scissors') {
             Write-Host "You win!  I chose $compy_choice and you chose $user_choice." -ForegroundColor Green
             $user_game_wins+=1
         }
-        elseif ($compy_choice -eq 'paper' -and $user_choice -eq 'rock' -or $user_choice -eq 'spock') {
+        elseif ($compy_choice -eq 'paper' -and $user_choice -eq 'lizard' ) {
+            Write-Host "You win!  I chose $compy_choice and you chose $user_choice." -ForegroundColor Green
+            $user_game_wins+=1
+        }
+        elseif ($compy_choice -eq 'paper' -and $user_choice -eq 'rock') {
+            Write-Host "I win!  I chose $compy_choice and you chose $user_choice." -ForegroundColor Red
+            $compy_game_wins+=1
+        }
+        elseif ($compy_choice -eq 'paper' -and $user_choice -eq 'spock') {
             Write-Host "I win!  I chose $compy_choice and you chose $user_choice." -ForegroundColor Red
             $compy_game_wins+=1
         }
         elseif ($compy_choice -eq 'scissors' -and $user_choice -eq 'scissors' ) {
-            Write-Host "It is a tie!" "  I chose $compy_choice and you chose $user_choice."
+            Write-Host "It is a tie!  I chose $compy_choice and you chose $user_choice."
         }
-        elseif ($compy_choice -eq 'scissors' -and $user_choice -eq 'rock' -or $user_choice -eq 'spock' ) {
+        elseif ($compy_choice -eq 'scissors' -and $user_choice -eq 'rock') {
             Write-Host "You win!  I chose $compy_choice and you chose $user_choice." -ForegroundColor Green
             $user_game_wins+=1 
         }
-        elseif ($compy_choice -eq 'scissors' -and $user_choice -eq 'paper' -or $user_choice -eq 'lizard') {
+        elseif ($compy_choice -eq 'scissors' -and $user_choice -eq 'spock' ) {
+            Write-Host "You win!  I chose $compy_choice and you chose $user_choice." -ForegroundColor Green
+            $user_game_wins+=1 
+        }
+        elseif ($compy_choice -eq 'scissors' -and $user_choice -eq 'paper') {
+            Write-Host "I win!  I chose $compy_choice and you chose $user_choice." -ForegroundColor Red
+            $compy_game_wins+=1
+        }
+        elseif ($compy_choice -eq 'scissors' -and $user_choice -eq 'lizard') {
             Write-Host "I win!  I chose $compy_choice and you chose $user_choice." -ForegroundColor Red
             $compy_game_wins+=1
         }
         elseif ($compy_choice -eq 'lizard' -and $user_choice -eq 'lizard') {
-            Write-Host "It is a tie!" "  I chose $compy_choice and you chose $user_choice."
+            Write-Host "It is a tie!  I chose $compy_choice and you chose $user_choice."
         }
-        elseif ($compy_choice -eq 'lizard' -and $user_choice -eq 'rock' -or $user_choice -eq 'scissors'){
+        elseif ($compy_choice -eq 'lizard' -and $user_choice -eq 'rock'){
             Write-Host "You win! I chose $compy_choice and you chose $user_choice." -ForegroundColor Green
             $user_game_wins+=1 
         }
-        elseif ($compy_choice -eq 'lizard' -and $user_choice -eq 'paper' -or $user_choice -eq 'spock') {
+        elseif ($compy_choice -eq 'lizard' -and $user_choice -eq 'scissors'){
+            Write-Host "You win! I chose $compy_choice and you chose $user_choice." -ForegroundColor Green
+            $user_game_wins+=1 
+        }
+        elseif ($compy_choice -eq 'lizard' -and $user_choice -eq 'paper') {
+            Write-Host "I win!  I chose $compy_choice and you chose $user_choice." -ForegroundColor Red
+            $compy_game_wins+=1
+        }
+        elseif ($compy_choice -eq 'lizard' -and $user_choice -eq 'spock') {
             Write-Host "I win!  I chose $compy_choice and you chose $user_choice." -ForegroundColor Red
             $compy_game_wins+=1
         }
         elseif ($compy_choice -eq 'spock' -and $user_choice -eq 'spock') {
-            Write-Host "It is a tie!" "  I chose $compy_choice and you chose $user_choice."
+            Write-Host "It is a tie!  I chose $compy_choice and you chose $user_choice."
         }
-        elseif ($compy_choice -eq 'spock' -and $user_choice -eq 'paper' -or $user_choice -eq 'lizard') {
+        elseif ($compy_choice -eq 'spock' -and $user_choice -eq 'paper') {
             Write-Host "You win! I chose $compy_choice and you chose $user_choice." -ForegroundColor Green
             $user_game_wins+=1
         }
-        elseif ($compy_choice -eq 'spock' -and $user_choice -eq 'rock' -or $user_choice -eq 'scissors') {
+        elseif ($compy_choice -eq 'spock' -and $user_choice -eq 'lizard') {
+            Write-Host "You win! I chose $compy_choice and you chose $user_choice." -ForegroundColor Green
+            $user_game_wins+=1
+        }
+        elseif ($compy_choice -eq 'spock' -and $user_choice -eq 'rock') {
+            Write-Host "I win!  I chose $compy_choice and you chose $user_choice." -ForegroundColor Red
+            $compy_game_wins+=1
+        }
+        elseif ($compy_choice -eq 'spock' -and $user_choice -eq 'scissors') {
             Write-Host "I win!  I chose $compy_choice and you chose $user_choice." -ForegroundColor Red
             $compy_game_wins+=1
         }
