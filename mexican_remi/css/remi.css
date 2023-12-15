@@ -14,6 +14,10 @@ body {
     font-family: 'Amita', serif;
 }
 
+.section_header {
+  font-family: 'Amita', serif;
+}
+
 /* Style the header */
 .header {
   grid-area: header;
