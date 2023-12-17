@@ -14,9 +14,7 @@ body {
     font-family: 'Amita', serif;
 }
 
-.section_header {
-  font-family: 'Amita', serif;
-}
+
 
 /* Style the header */
 .header {
@@ -74,6 +72,10 @@ body {
   max-width: 330px;
 }
 
+.section_header {
+  font-family: 'Amita', serif;
+}
+
 /* Style the footer */
 .footer {
   grid-area: footer;
@@ -81,6 +83,7 @@ body {
   padding: 10px;
   text-align: center;
   color: #DDDFDF;
+  font-family: 'Amita', serif;
 }
 
 
