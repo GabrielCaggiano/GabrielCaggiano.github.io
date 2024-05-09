@@ -1,0 +1,111 @@
+
+* {
+  box-sizing: border-box;
+}
+/*
+body {
+  
+}
+*/
+.h2,
+.h3 {
+    color: #484A47;
+    padding-left: 10px;
+    font-family: 'Amita', serif;
+}
+
+
+
+/* Style the header */
+.header {
+  grid-area: header;
+  color: #DDDFDF;
+  background-color: #5C6D70;
+  /*padding: 30px;*/
+  text-align: center;
+  font-size: 35px;
+}
+
+.header-pic {
+    max-width: 330px;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left middle middle middle middle right' 
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+.p {
+    padding: 10px;
+}
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+  /*height: 300px;  Should be removed. Only for demonstration */
+  padding: 10px;
+  background-color: #DDDFDF;
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+.glossary-img {
+  max-width: 330px;
+}
+
+.section_header {
+  font-family: 'Amita', serif;
+  font: Amita;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #484A47;
+  padding: 10px;
+  text-align: center;
+  color: #DDDFDF;
+  font-family: 'Amita', serif;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+  }
+}
+
+/* 
+Colors
+  #484A47 outer space
+  #5C6D70 paynes gray
+  #A37774 old rose
+  #DDDFDF platinum
+  #E0AC9D melon
+  */
+
