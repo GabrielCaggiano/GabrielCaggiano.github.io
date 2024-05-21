@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <title>Soda Springs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="author" content="Gabriel Caggiano">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/lesson11/css/style.css">
+  <link rel="stylesheet" href="/lesson11/css/medium.css">
+  <link rel="stylesheet" href="/lesson11/css/large.css">
+  <script src="/lesson11/js/java_script.js" async></script>
+  <script src="/lesson11/js/last_visit.js" async></script>
+  <script src="/lesson11/js/soda-events.js" async></script>
+  <script src="/lesson11/js/soda-weatherapi.js" async></script>
+  <script src="/lesson11/js/windchill.js" async></script>
+  
+</head>
+    <body>
+      <div id="content">
+      <div id="wrap">
+        <div class="pancakes">
+          <span id="pancakes"></span>
+        </div>
+        <header class="weather-head">
+            <img class="logo" src="/lesson11/images/term_site_logo.png" alt="cartoon style sunset">
+            <h1>Harvest Hills Neighbors</h1>
+            <h2>Your One Stop Shop!</h2>
+        </header>
+        <nav>
+          <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="/lesson11/index.html">Home</a></li>
+            <li><a href="/lesson11/preston.html">Preston</a></li>
+            <li class="active"><a href="/lesson11/soda-springs.html">Soda Springs</a></li>
+            <li><a href="/lesson11/fish-haven.html">Fish Haven</a></li>
+            <li><a href="/lesson11/stormcenter.html">Storm Center</a></li>
+            <li><a href="/lesson11/gallery.html">Gallery</a></li>
+          </ul>
+        </nav>
+        <main>
+          <div class="hero">
+            <h3>Soda Springs</h3>
+            <img src="/lesson11/images/soda-springs.jpg" alt="A neighborhood aerial photo">
+            <p class="summary"> 
+              <strong>Weather Summary</strong><br>
+              Currently:<span id="current-temp"></span>°F<span id="description"></span><br>
+              High: <span id="high-temp"></span>°F<br>
+              Wind Chill: <span id="wind-chill"></span><br>
+              Humidity: <span id="humidity"></span>%<br>
+              Wind Speed: <span id="speed"></span>mph<br>
+            </p>
+          </div>
+          <div class="forecast">
+            <h3>Five Day Forecast</h3>
+            <table class="table">
+            <tbody id="5day">
+              <tr>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+              </tr>
+              <tr id="5dayTemp">
+                  <td><span id="5dayTemp1"></span>°F</td>
+                  <td><span id="5dayTemp2"></span>°F</td>
+                  <td><span id="5dayTemp3"></span>°F</td>
+                  <td><span id="5dayTemp4"></span>°F</td>
+                  <td><span id="5dayTemp5"></span>°F</td>
+              </tr>
+            </tbody>  
+            </table>
+          </div>
+          <div class="article">
+            <h3>Payphone Art Vandal!</h3>
+            
+            <p><img src="/lesson11/images/dirty.jpg" alt="a vandalized payphone">
+              Local muralist and yogurt enthusiast Pam Halbert recently found that her latest art project in town had been vandalized.  “I knew this piece would be controversial, but I never thought the guys at the warehouse next door would do this kind of thing.”  The piece was a payphone box that to Pam, resembled her days as a receptionist.  When her husband Jim confronted the vandal, he became belligerent, but thankfully the volunteer Sheriff's Deputy, Dwide Scrhude, was there to bring down the vandal turned assailant, with a can of pepper spray.  “I did my duty, that is all '' said Dwide who refused to accept a certificate of bravery from the local Sheriff's department.<br><br>  
+
+              “I am just lucky Dwide was there, and Roy was lucky Dwide only used pepper spray and not his ninja stars” said Jim.  Pam has some work ahead of her, but she moves forward with resolve to finish her project, and bring a true art spectacle to the community of Soda Springs
+            </p>
+          </div>
+
+          <div class="events">
+          </div>
+          <div class="contact">
+            <h3>Contact Information</h3>
+        
+            
+              <p>Phone: 1-801-798-7674</p>
+              <p>Address: 1234 Place Way</p>
+              <p>Preston, ID 83263</p>
+            
+  
+            <p class="days">Days since you last visited: <span id="days"></span></p>
+  
+            <div class="social">
+            <a href="#"><img src="/lesson6/images/Facebook.png" alt="facebook icon"></a>
+            <a href="#"><img src="/lesson6/images/Instagram.png" alt="instagram icon"></a>
+            <a href="#"><img src="/lesson6/images/YouTube.png" alt="youtube icon"></a>
+            </div>
+  
+            <!--<img class="large-map" src="/lesson6/images/preston.png" alt="google maps view of Preston Idaho">-->
+            <img class="small-map" src="/lesson6/images/preston_small.png" alt="google maps view of Preston Idaho">
+          </div>
+            
+       
+      </main>
+      <footer> 
+        
+        <p class="copy">
+          &copy; <span id="copy-year"></span> | Gabriel Caggiano | Utah | <a href="https://www.byui.edu/online" target="_blank">BYUI online Learning</a>
+        </p>
+        <p class="last-modified">Last Updated: <span id="assignment-last-modified"></span></p>
+        
+      </footer>
+  </div>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+</script>
+
+<script>
+
+WebFont.load({
+google: {
+families: [
+    'Ubuntu', 'Tahoma'
+    ]
+}
+});
+
+</script>
+</body>
+</html>  

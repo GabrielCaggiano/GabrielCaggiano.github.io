@@ -1,0 +1,58 @@
+@media(min-width: 32.5em) {
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .navigation li:first-child {
+        display: none;
+    }
+    
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .small-map {
+        width: unset;
+    }
+
+    .forecast {
+        display: block;
+    }
+    
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+
+    /*-------------------Home Page-------------------*/
+
+    .cards section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 640px;
+        width: unset;
+    }
+
+    .card_2 h3, .card_2 h4, .card_2 p, .card_6 h3, .card_6 h4, .card_6 p {
+        grid-column: 1/2;
+    }
+
+    .card_2 img, .card_6 img {
+        grid-column: 2/3;
+        grid-row: 1/6;
+    }
+
+    .card_0 h3, .card_0h4 .card_0 p {
+        grid-column: 2/3;
+    }
+
+    .card_0 img {
+        grid-column: 1/2;
+        grid-row: 1/6;
+    }
+
+}
