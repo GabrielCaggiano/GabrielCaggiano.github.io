@@ -41,6 +41,11 @@ header {
     text-align: center;
 }
 
+.main-head {
+    background-image: url(/Harvest_Hills_12th_Activity_Days/images/sundial_peak.JPG);
+
+}
+
 .calendar {
     position: relative;
   padding-bottom: 75%; /* Adjust this value based on the aspect ratio of the calendar */
