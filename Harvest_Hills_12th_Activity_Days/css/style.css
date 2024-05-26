@@ -43,7 +43,9 @@ header {
 
 .main-head {
     background-image: url(/Harvest_Hills_12th_Activity_Days/images/sundial_peak.JPG);
-
+    background-size: cover; /* Cover the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
 }
 
 .calendar {
