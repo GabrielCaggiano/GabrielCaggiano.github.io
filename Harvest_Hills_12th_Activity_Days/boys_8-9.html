@@ -1,91 +1,49 @@
 <!doctype html>
 <html lang="en-us">
 <head>
-  <title>Preston</title>
+  <title>Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <meta name="author" content="Gabriel Caggiano">
-  <meta name="description" content="">
+  <meta name="description" content="Activity Days Home Page">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="/images/favicon.ico">
+  <link rel="shortcut icon" href="/Harvest_Hills_12th_Activity_Days/images/favicon.ico">
   <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/lesson11/css/style.css">
-  <link rel="stylesheet" href="/lesson11/css/medium.css">
-  <link rel="stylesheet" href="/lesson11/css/large.css">
-  <script src="/lesson11/js/java_script.js" async></script>
-  <script src="/lesson11/js/pancakes.js" async></script>
-  <script src="/lesson11/js/last_visit.js" async></script>
-  <script src="/lesson11/js/preston-events.js" async></script>
-  <script src="/lesson11/js/weatherapi.js" async></script>
-  <script src="/lesson11/js/windchill.js" async></script>
+  <link rel="stylesheet" href="/Harvest_Hills_12th_Activity_Days/css/style.css">
+  <link rel="stylesheet" href="/Harvest_Hills_12th_Activity_Days/css/medium.css">
+  <link rel="stylesheet" href="/Harvest_Hills_12th_Activity_Days/css/large.css">
+  <script src="/Harvest_Hills_12th_Activity_Days/js/index.js" async></script>
+  <script src="/Harvest_Hills_12th_Activity_Days/js/java_script.js" async></script>
+  <script src="/Harvest_Hills_12th_Activity_Days/js/last_visit.js" async></script>
 </head>
     <body>
       <div id="content">
       <div id="wrap">
-        <div class="pancakes">
-          <span id="pancakes"></span>
-        </div>
         <header class="weather-head">
             <img class="logo" src="/lesson11/images/term_site_logo.png" alt="cartoon style sunset">
-            <h1>Harvest Hills Neighbors</h1>
+            <h1>Harvest Hills 12th Ward Activity Days</h1>
             <h2>Your One Stop Shop!</h2>
         </header>
         <nav>
           <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="/lesson11/index.html">Home</a></li>
-            <li class="active"><a href="/lesson11/preston.html">Preston</a></li>
-            <li><a href="/lesson11/soda-springs.html">Soda Springs</a></li>
-            <li><a href="/lesson11/fish-haven.html">Fish Haven</a></li>
-            <li><a href="/lesson11/stormcenter.html">Storm Center</a></li>
-            <li><a href="/lesson11/gallery.html">Gallery</a></li>
+            <li class="active"><a href="/lesson11/index.html">Home</a></li>
+            <li><a href='https://GabrielCaggiano.github.io/Harvest_Hills_12th_Activity_Days/boys_8-9.html'>Boys 8&9</a></li>
+            <li><a href='https://GabrielCaggiano.github.io/Harvest_Hills_12th_Activity_Days/girls_8-9.html'>Girls 8&9</a></li>
+            <li><a href='https://GabrielCaggiano.github.io/Harvest_Hills_12th_Activity_Days/boys_10-11.html'>Boys 10&11</a></li>
+            <li><a href='https://GabrielCaggiano.github.io/Harvest_Hills_12th_Activity_Days/girls_10-11.html'>Girls 10&11</a></li>
           </ul>
         </nav>
         <main>
           <div class="hero">
-            <h3>Preston Idaho</h3>
-            <img src="/lesson11/images/preston.jpg" alt="A neighborhood aerial photo">
-            <p class="summary"> 
-              <strong>Weather Summary</strong><br>
-              Currently:<span id="current-temp"></span>°F<span id="description"></span><br>
-              High: <span id="high-temp"></span>°F<br>
-              Wind Chill: <span id="wind-chill"></span><br>
-              Humidity: <span id="humidity"></span>%<br>
-              Wind Speed: <span id="speed"></span>mph<br>
-            </p>
+            <h3>Home</h3>
+          <img class="hero-img" src="/lesson9/images/hero.jpg" alt="neighborhood aerial photo">
+          </div> 
+          
+          <div class="calendar">
+            <iframe src="https://calendar.google.com/calendar/embed?src=b0843586ac3cee42aca1e927c3d9d7e8539b6be1829c8b4c6e211152df0a0afb%40group.calendar.google.com&ctz=America%2FDenver" class="responsive-calendar"></iframe>
           </div>
-          <div class="forecast">
-            <h3>Five Day Forecast</h3>
-            <table class="table">
-            <tbody id="5day">
-              <tr>
-                <th>Mon</th>
-                <th>Tue</th>
-                <th>Wed</th>
-                <th>Thu</th>
-                <th>Fri</th>
-              </tr>
-              <tr id="5dayTemp">
-                  <td><span id="5dayTemp1"></span>°F</td>
-                  <td><span id="5dayTemp2"></span>°F</td>
-                  <td><span id="5dayTemp3"></span>°F</td>
-                  <td><span id="5dayTemp4"></span>°F</td>
-                  <td><span id="5dayTemp5"></span>°F</td>
-              </tr>
-            </tbody>  
-            </table>
-          </div>
-          <div class="article">
-            <h3>Goodbye Toby!</h3>
-            
-            <p><img src="/lesson11/images/goodbye.jpg" alt="Toby leaving for Costa Rica">
-              Toby Flenserdon, the most infamous citizen of Preston, and the most annoying turn light inspector in town, is finally moving away.  Toby is headed to Costa Rica, in search of who knows what.  All that anyone cares about is that he is finally gone.  Since he moved to the town and implemented the turn light inspection enforcement, life has been just a little worse for everyone in town.  One person we interviewed said, “He’s okay I guess but he's always going on about how it’s very important we all make sure our turn signals are working.  Mine work but I don’t use them out of spite.”  <br><br>
-
-              “I just wanted to make people safe and encourage people to actually use their signals, no one uses them here, and if often causes accidents.”  said Toby, but no one really cares.  Mayor Scott has declared today a new town holiday, and has announced that he will be throwing a huge going away party for Toby, but of course, Toby is not invited.</p>
-          </div>
-
-          <div class="events">
-          </div>
+          
           <div class="contact">
             <h3>Contact Information</h3>
         
@@ -98,13 +56,9 @@
             <p class="days">Days since you last visited: <span id="days"></span></p>
   
             <div class="social">
-            <a href="#"><img src="/lesson6/images/Facebook.png" alt="facebook icon"></a>
-            <a href="#"><img src="/lesson6/images/Instagram.png" alt="instagram icon"></a>
-            <a href="#"><img src="/lesson6/images/YouTube.png" alt="youtube icon"></a>
+            <a href="https://www.facebook.com/groups/1387306561677535/" target="_blank"><img src="/Harvest_Hills_12th_Activity_Days/images/Facebook.png" alt="facebook icon"></a>
+            <a href="#"><img src="/Harvest_Hills_12th_Activity_Days/images/YouTube.png" alt="youtube icon"></a>
             </div>
-  
-            <!--<img class="large-map" src="/lesson6/images/preston.png" alt="google maps view of Preston Idaho">-->
-            <img class="small-map" src="/lesson6/images/preston_small.png" alt="google maps view of Preston Idaho">
           </div>
             
        
@@ -112,7 +66,7 @@
       <footer> 
         
         <p class="copy">
-          &copy; <span id="copy-year"></span> | Gabriel Caggiano | Utah | <a href="https://www.byui.edu/online" target="_blank">BYUI online Learning</a>
+          &copy; <span id="copy-year"></span> | Gabriel Caggiano & Matthew SHank | Utah | <a href="https://www.byui.edu/online" target="_blank">BYUI online Learning</a>
         </p>
         <p class="last-modified">Last Updated: <span id="assignment-last-modified"></span></p>
         
