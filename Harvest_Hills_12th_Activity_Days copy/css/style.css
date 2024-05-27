@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Spartan&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ECA400;
+    background-color: #173259;
+    font-family: 'Ubuntu', Tahoma, sans-serif;
+    padding: 10px;
+    margin: unset;
+    text-align: center;
+}
+
+#content {
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100vh;
+    font-family: 'Ubuntu', Tahoma, sans-serif
+}
+
+#wrap {
+    padding-bottom: 100px;
+}
+
+.pancakes {
+    background-color: #444545;
+    text-align: center;
+}
+
+#pancakes {
+    font-size: 3em;
+    color: #B5FFE9;
+}
+
+header {
+    background-color: #173259;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-head {
+    background-image: url(/Harvest_Hills_12th_Activity_Days/images/national-forest.jpg);
+    background-size: cover; /* Cover the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+.calendar {
+    position: relative;
+  padding-bottom: 75%; /* Adjust this value based on the aspect ratio of the calendar */
+  height: 0;
+  overflow: hidden;
+}
+
+.responsive-calendar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+header,
+nav,
+main,
+footer {
+	margin: 0 auto;
+}
+
+nav {
+	background-color: #AB9F9D;
+	text-align: center;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li a {
+	display: block;
+	color: #173259;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+    color: #ECA400;
+    background-color: #173259;
+}
+
+.active a {
+    color:#ECA400;
+    background-color: #173259;
+}
+
+
+main div p {
+    font-family: 'Spartan', Tahoma, sans-serif;
+    margin: 0;
+}
+
+main div {
+    text-align: center;
+}
+
+
+main p, div {
+    background-color: #CFDADE;
+    color: #173259;
+}
+
+main p {
+    padding: 10px;
+}
+
+p a {
+    color: #ECA400;
+    padding: 2px;
+}
+
+p a:hover {
+    color: #D81159;
+    background-color:#AB9F9D;
+}
+
+p, li {
+    font-family: 'Montserrat', Tahoma, sans-serif;
+    color: #444545;
+}
+
+.hero {
+    list-style: none;
+    text-align: left;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.forecast {
+    display: none;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    margin: 0 auto;
+}
+
+.gallery figure img{
+    width: 100%;
+}
+
+figure {
+    padding: 10px;
+}
+
+
+
+.table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1024px;
+}
+
+th, td {
+    text-align: center;
+}
+
+.article p {
+    text-align: left;
+}
+
+.article img {
+    width: 100%;
+    float: right;
+}
+
+.events {
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: #AB9F9D;
+    margin: 0 auto 10px auto;
+    width: 75%;
+}
+footer p {
+    color: #444545;
+}
+
+.days span{
+    color: #ECA400;
+}
+
+.contact {
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: #AB9F9D;
+    margin: 0 auto 10px auto;
+    width: 90%;
+}
+
+.contact p {
+    background-color: #AB9F9D;
+}
+
+.contact li {
+    list-style: none;
+}
+
+footer {
+    background-color: #444544;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+footer p {
+    text-align: center;
+    color:#ECA400;
+}
+
+.social {
+      background-color: #AB9F9D;
+      margin: 0 auto;
+}
+
+.social a {
+      padding: 10px;
+}
+
+.cred {
+      background-color: #AB9F9D;
+      text-align: center;
+}
+
+.small-map {
+      width: 90%;
+      margin: 0 auto;
+}
+
+  .large-map {
+      width: 0%;
+  }
+
+
+  /*-------------------Storm Center-------------------*/
+
+form {
+    margin: 0 auto;
+    max-width: 350px;
+}
+
+form fieldset {
+    background-color: #AB9F9D;
+    margin: 2rem 0;
+    border: 2px solid #444545;
+    padding: .5rem;
+    text-align: left;
+}
+
+form legend {
+    background-color: #444545;
+    color: #B5FFE9;
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+form label {
+    font-style: italic;
+    font-weight: 700;
+}
+
+form label input, select{
+    display: block;
+    border: solid 1px #444545;
+}
+
+form label input:required {
+    border-left: 6px solid #444545;
+}
+
+.sev {
+	display: flex;
+	align-items: center;
+}
+
+.danger {
+    text-align: left;
+    background-color: #AB9F9D;
+}
+
+/*-------------------Home Page-------------------*/
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    grid-gap: 1em;
+    grid-gap: 1em;
+    margin: 10px 0 10px 0;
+}
+
+.cards h4 {
+    height: 60px;
+}
+
+.cards p {
+    font-size: 1.2em;
+    background-color: #AB9F9D;
+}
+
+.cards section {
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: #AB9F9D;
+    margin: 0 auto;
+}
+
+.cards img {
+    max-width: 320px;
+    border-radius: 5px;
+}
+
+.card_0 {
+    order: 2;
+}
+
+.card_2 {
+    order: 3;
+}
+
+.card_6 {
+    order: 1;
+}
