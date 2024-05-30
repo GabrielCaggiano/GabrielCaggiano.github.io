@@ -154,9 +154,14 @@ p, li {
     color: #444545;
 }
 
-.purpose h3 {
+.purpose h3, h4{
     font-family: 'Shadows Into Light', Verdana, Geneva, Tahoma, sans-serif ;
     color: black;
+    background-color: #CFDADE
+}
+
+.purpose h4 {
+    text-align: left;
 }
 
 figure {
