@@ -154,7 +154,7 @@ p, li {
     background-color: #fff;
 }
 
-.purpose h3 {
+.purpose h3, p {
     text-align: left;
 }
 
