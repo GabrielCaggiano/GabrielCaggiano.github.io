@@ -24,18 +24,8 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 100px;
 }
 
-.pancakes {
-    background-color: #444545;
-    text-align: center;
-}
-
-#pancakes {
-    font-size: 3em;
-    color: #B5FFE9;
-}
-
 header {
-    background-color: #173259;
+    background-color: #fff;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -51,6 +41,10 @@ header {
 }
 
 .main-head-img {
+    max-width: 100%;
+}
+
+.quote img {
     max-width: 100%;
 }
 
@@ -131,7 +125,7 @@ main div {
 
 
 main p, div {
-    background-color: #CFDADE;
+    background-color: #fff;
     color: #173259;
 }
 
@@ -157,7 +151,7 @@ p, li {
 .purpose h3, h4{
     font-family: 'Shadows Into Light', Verdana, Geneva, Tahoma, sans-serif ;
     color: black;
-    background-color: #CFDADE
+    background-color: #fff;
 }
 
 .purpose h4 {
