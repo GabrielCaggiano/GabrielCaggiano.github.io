@@ -220,3 +220,36 @@ footer p {
 .volunteerForm {
     max-width: 100%;
 }
+
+.resources {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.resourceCard {
+    grid-row: 2;
+    border-radius: 6px;
+    border-style: ridge;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.resourceCard h3 {
+    border-radius: 6px;
+    background-color: #AB9F9D;
+    color:#173259;
+    grid-row: 1;
+}
+.resourceCard img {
+    height: 35px; 
+    width: auto;
+    max-width: 100%;
+    grid-column: 2;
+}
+.resourceCard p{
+    grid-row: 2;
+}
+.resourceCard a {
+    grid-row: 3;
+}
