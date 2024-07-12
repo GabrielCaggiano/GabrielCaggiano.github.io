@@ -243,12 +243,14 @@ footer p {
     grid-column: 1/6;
     max-height: 25px;
 }
-.resourceCard img {
+.resourceImg {
     height: 60px; 
     width: auto;
     max-width: 100%;
-    grid-column: 3/5;
+    grid-column: 1/6;
     grid-row: 2;
+    display: flex;
+    justify-content: center;
 
 }
 .resourceCard p{
