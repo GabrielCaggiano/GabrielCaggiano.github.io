@@ -48,11 +48,10 @@ header {
     max-width: 100%;
 }
 
+@media(max-width: 64em) {
 .calendar {
-    position: relative;
-  padding-bottom: 75%; /* Adjust this value based on the aspect ratio of the calendar */
-  height: 0;
-  overflow: hidden;
+    display: none;
+}
 }
 
 .responsive-calendar {
