@@ -108,6 +108,10 @@
     .cards section img {
         width: 100%;
     }
+
+    .calendar-sub-img {
+        display: none;
+    }
     
 
 
