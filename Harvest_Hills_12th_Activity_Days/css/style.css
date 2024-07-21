@@ -74,8 +74,12 @@ header {
     border: 0;
   }
 
-.leaders-div li {
+.leaders-div li, h2 {
     text-align: left;
+}
+
+.leaders-div a {
+    text-decoration: none;
 }
 
 header,
