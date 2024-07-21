@@ -249,7 +249,9 @@ footer p {
 }
 @media screen and (max-width: 845px){
     .resources {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
     }
     }
 
