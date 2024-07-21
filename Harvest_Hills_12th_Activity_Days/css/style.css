@@ -56,9 +56,7 @@ header {
 @media screen and (max-width: 845px){
     .resources {
 
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 1rem;
+        display: block;
     }
 }
 
