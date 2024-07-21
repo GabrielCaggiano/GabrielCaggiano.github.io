@@ -58,6 +58,17 @@ header {
 }
 }
 
+.calendar-sub {
+    background-image: url(/images/clipart-monthly-calendar-3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.calendar-sub img {
+    max-width: 100%;
+}
+
 .responsive-calendar {
     position: absolute;
     top: 0;
@@ -66,6 +77,14 @@ header {
     height: 100%;
     border: 0;
   }
+
+.leaders-div li, h2 {
+    text-align: left;
+}
+
+.leaders-div a {
+    text-decoration: none;
+}
 
 header,
 nav,
@@ -150,6 +169,7 @@ p, li {
     font-family: 'Montserrat', Tahoma, sans-serif;
     color: #444545;
 }
+
 
 .purpose h2, h3{
     font-family: 'Shadows Into Light', Verdana, Geneva, Tahoma, sans-serif ;
