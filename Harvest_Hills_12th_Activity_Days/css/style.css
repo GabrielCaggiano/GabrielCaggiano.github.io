@@ -74,6 +74,10 @@ header {
     border: 0;
   }
 
+.leaders-div li {
+    text-align: center;
+}
+
 header,
 nav,
 main,
@@ -157,6 +161,7 @@ p, li {
     font-family: 'Montserrat', Tahoma, sans-serif;
     color: #444545;
 }
+
 
 .purpose h2, h3{
     font-family: 'Shadows Into Light', Verdana, Geneva, Tahoma, sans-serif ;
