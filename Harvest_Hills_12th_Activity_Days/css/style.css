@@ -52,12 +52,14 @@ header {
 .calendar {
     display: none;
 }
-.resources {
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
 }
+@media screen and (max-width: 845px){
+    .resources {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
 }
 
 .calendar-sub {
