@@ -48,11 +48,10 @@ header {
     max-width: 100%;
 }
 
+@media(max-width: 64em) {
 .calendar {
-    position: relative;
-  padding-bottom: 75%; /* Adjust this value based on the aspect ratio of the calendar */
-  height: 0;
-  overflow: hidden;
+    display: none;
+}
 }
 
 .responsive-calendar {
@@ -220,4 +219,61 @@ footer p {
 
 .volunteerForm {
     max-width: 100%;
+}
+
+.resources {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.resourceCard {
+    grid-row: 2;
+    border-radius: 6px;
+    border-style: ridge;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.resourceCard h3 {
+    border-radius: 6px;
+    background-color:#173259;
+    color:#ECA400;
+    grid-row: 1;
+    grid-column: 1/6;
+    max-height: 25px;
+}
+.resourceImg {
+    height: 60px; 
+    width: auto;
+    max-width: 100%;
+    grid-column: 1/6;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+
+}
+.resourceCard p{
+    grid-row: 3;
+    grid-column: 1/6;
+}
+.resourceCard a {
+    grid-row: 4;
+    text-decoration: none;
+    background-color: #AB9F9D;
+    color:#173259;
+    border-radius: 6px;
+    grid-column: 2/5;
+    max-height: 20px;
+}
+
+.resourceCard a:hover {
+    background-color: #173259;
+    color:#ECA400;
+    grid-column: 2/5;
+    max-height: 20px;
+}
+
+#familySearchImg{
+    grid-column: 1/6;
 }
