@@ -54,6 +54,13 @@
         grid-column: 1/2;
         grid-row: 1/6;
     }
+    .resources {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+
 
 
 
