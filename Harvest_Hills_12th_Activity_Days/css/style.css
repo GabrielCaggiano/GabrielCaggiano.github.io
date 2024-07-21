@@ -54,6 +54,13 @@ header {
 }
 }
 
+.calendar-sub {
+    background-image: url(/images/clipart-monthly-calendar-3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .responsive-calendar {
     position: absolute;
     top: 0;
