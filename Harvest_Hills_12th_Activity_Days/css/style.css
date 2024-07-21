@@ -61,6 +61,10 @@ header {
     background-repeat: no-repeat;
 }
 
+.calendar-sub-img {
+    max-width: 100%;
+}
+
 .responsive-calendar {
     position: absolute;
     top: 0;
