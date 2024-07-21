@@ -55,6 +55,12 @@
         grid-row: 1/6;
     }
 
+    @media screen and (max-width: 845px){
+        #resources {
+            display: block;
+        }
+        }
+
 
 
 }

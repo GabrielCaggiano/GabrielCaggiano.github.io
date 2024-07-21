@@ -53,11 +53,7 @@ header {
     display: none;
 }
 }
-@media screen and (max-width: 845px){
-#resources {
-    display: block;
-}
-}
+
 
 .calendar-sub {
     background-image: url(/images/clipart-monthly-calendar-3.png);
