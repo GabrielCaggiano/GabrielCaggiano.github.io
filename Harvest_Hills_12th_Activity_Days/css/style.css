@@ -52,6 +52,10 @@ header {
 .calendar {
     display: none;
 }
+.resources{
+
+    display: block;
+}
 }
 
 .responsive-calendar {
