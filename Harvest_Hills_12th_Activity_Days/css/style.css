@@ -302,7 +302,7 @@ footer p {
 @media screen and (max-width: 520px){
     .resources {
         display: grid;
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
     #familySearch {
         grid-row: 2;
