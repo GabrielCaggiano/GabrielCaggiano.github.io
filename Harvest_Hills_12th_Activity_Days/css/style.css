@@ -247,6 +247,11 @@ footer p {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
 }
+@media screen and (max-width: 845px){
+    .resources {
+        display: flex;
+    }
+    }
 
 .resourceCard {
     grid-row: 2;
