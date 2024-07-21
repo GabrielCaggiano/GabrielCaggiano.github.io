@@ -57,7 +57,7 @@
 
     @media screen and (max-width: 845px){
         #resources {
-            display: block;
+            display: flex;
         }
         }
 
