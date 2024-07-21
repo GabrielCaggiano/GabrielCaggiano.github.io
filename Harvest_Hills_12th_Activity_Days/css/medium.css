@@ -57,9 +57,18 @@
     @media screen and (max-width: 1022px){
         .resources {
             display: grid;
-            grid-template-columns: 1fr;
             grid-template-rows: repeat(3, 1fr);
         }
+        #familySearch {
+            grid-row: 1
+        }
+        #comeFollowMe {
+            grid-row: 2
+        }
+        #duolingo {
+            grid-row: 3
+        }
+
     }
 
 
