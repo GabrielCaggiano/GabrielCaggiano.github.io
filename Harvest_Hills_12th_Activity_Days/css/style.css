@@ -54,10 +54,9 @@ header {
 }
 }
 @media screen and (max-width: 845px){
-    .resources {
-
-        display: block;
-    }
+#resources {
+    display: block;
+}
 }
 
 .calendar-sub {
